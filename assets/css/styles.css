@@ -1,19 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
 
-
-/*=============== Signature Gon ===============*/
-
-@font-face {
-    font-family: 'Signature Gon';
-    src: local('Signature Gon Regular'), local('Signature-Gon-Regular'),
-        url('../font/SignatureGonRegular/SignatureGonRegular.woff2') format('woff2'),
-        url('../font/SignatureGonRegular/SignatureGonRegular.woff') format('woff'),
-        url('../font/SignatureGonRegular/SignatureGonRegular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
@@ -49,7 +36,7 @@
 
   /*========== Font and typography ==========*/
   --body-font: 'Open Sans', sans-serif;
-  --title-font: 'Signature Gon', sans-serif;
+  --title-font: 'Roboto Slab', sans-serif;
   --biggest-font-size: 6rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 6.25rem;
@@ -763,6 +750,14 @@ input {
   background-image: none;
 }
 
+.btn__halal,  .btn__non_halal{
+  padding: 1rem;
+  border-radius: 1rem;
+  color: rgb(0, 0, 0);
+  background-color: var(--title-color);
+  margin: 10px;
+}
+
 
 
 /*=============== EXPERIENCE ===============*/
@@ -972,6 +967,36 @@ input {
   filter: invert(0.5);
   transition: var(--img-transition);
 }
+
+.container_swiper{
+      max-width: 1280px;
+      margin: 0 auto;
+      height: 100%;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
 
 /*=============== GEOGRAPHY ===============*/
 .geography__container {

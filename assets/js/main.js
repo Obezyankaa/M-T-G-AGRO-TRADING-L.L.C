@@ -179,3 +179,49 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+/*=============== DISCOVER ===============*/
+
+const btn1 = document.querySelector(".btn__halal");
+const btn2 = document.querySelector(".btn__non_halal");
+
+
+
+btn1.addEventListener("click", () => {
+    const swiper1 = document.querySelector(".container_swiper");
+    console.log(swiper1);
+    swiper1.classList.add("test1_2");
+ 
+});
+
+btn2.addEventListener("click", () => {
+    const swiper2 = document.querySelector(".test2");
+    console.log(swiper2);
+    swiper2.classList.add("test2_2");
+});
+
+
+$(document).ready(function () {
+  // Swiper: Slider
+  new Swiper(".swiper-container", {
+    loop: true,
+    nextButton: ".swiper-button-next",
+    prevButton: ".swiper-button-prev",
+    slidesPerView: 3,
+    paginationClickable: true,
+    spaceBetween: 20,
+    breakpoints: {
+      1920: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1028: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+    },
+  });
+});
