@@ -841,12 +841,14 @@ input {
 @media screen and (max-width: 500px) {
    .modal {
       width: 27em;
+      margin-top: 80px;
     }
 }
 
 @media screen and (max-width: 400px) {
    .modal {
       width: 25em;
+      margin-top: 70px;
     }
 }
 
