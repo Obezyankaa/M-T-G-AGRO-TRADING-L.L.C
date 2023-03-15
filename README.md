@@ -10,4 +10,4 @@
 
 Join the channel to see more videos like this. [Telegram](https://t.me/Voloshanovskiy_V)
 
-![travel-website](/preview.png)
+![travel-website](/preview.jpg)
