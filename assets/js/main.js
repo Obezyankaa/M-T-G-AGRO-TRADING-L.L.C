@@ -178,9 +178,13 @@ let show = document.getElementById("showContent");
 let hide = document.getElementById("hideContent");
 
 show.addEventListener("click", () => {
-  content.style.display = "block";
+    content.style.display = "block";
+    document.body.style.overflow = "hidden";
+
 });
 
 hide.addEventListener("click", () => {
-  content.style.display = "none";
+    content.style.display = "none";
+    document.body.style.overflow = "scroll";
+
 });

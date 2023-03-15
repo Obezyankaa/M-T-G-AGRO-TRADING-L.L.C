@@ -218,6 +218,11 @@ input {
   font-weight: var(--font-semi-bold);
 }
 
+.nav__logo__img {
+  width: 60%;
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 390px) {
  .header {
   padding-bottom: 10px;
@@ -252,7 +257,7 @@ input {
     transition: .4s;
   }
   .nav__logo__img {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 }
 
@@ -783,16 +788,72 @@ input {
 }
 
 /* .block__contact {
-  display: none;
-}
-
-.block__contact__two {
-  display: block;
-}
-
-.block__contact__three {
-  display: no;
+  width: 40%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border: 3px solid rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
 } */
+
+
+.modal-all {
+  display: none;
+  background: rgba(20, 20, 20, 0.3);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.modal {
+  margin-left: auto;
+  margin-right: auto;
+  width: 35em;
+  margin-top: 140px;
+  background: white;
+  border: 1px solid silver;
+  padding: 15px;
+  border-radius: 10px;
+  animation: showBlock 0.5s linear forwards;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal__link {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+   .modal {
+      width: 27em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+   .modal {
+      width: 25em;
+    }
+}
+
+.modal__link span {
+  color: rgb(233 65 76);
+}
+
 /*========== SCROLL UP ==========*/
 .scrollup {
   position: fixed;
