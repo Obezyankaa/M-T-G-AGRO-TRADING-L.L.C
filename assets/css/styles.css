@@ -813,12 +813,12 @@ input {
 }
 
 .sponsor__content:hover .sponsor__img {
-  filter: invert(0.5);
+  filter: invert(0);
 }
 
 .sponsor__img {
-  width: 90px;
-  filter: invert(0.7);
+  width: 115px;
+  filter: invert(0.5);
   transition: var(--img-transition);
 }
 
