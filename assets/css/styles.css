@@ -288,6 +288,12 @@ input {
   line-height: 40px;
 }
 
+@media screen and (max-width: 428px) {
+  .alert{
+    min-width: 0;
+  }
+}
+
 /*=============== HEADER ===============*/
 .header {
   width: 100%;
