@@ -995,7 +995,7 @@ input {
 @media screen and (max-width: 400px) {
    .modal {
     width: 25em;
-    margin-top: 100px;
+    margin-top: 60px;
     }
 
     .fa-circle-xmark {
