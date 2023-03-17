@@ -980,8 +980,8 @@ input {
 
 @media screen and (max-width: 500px) {
    .modal {
-      width: 27em;
-      margin-top: 80px;
+    width: 27em;
+    margin-top: 50px;
     }
      .fa-circle-xmark {
     position: absolute;
