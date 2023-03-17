@@ -985,8 +985,8 @@ input {
     }
      .fa-circle-xmark {
     position: absolute;
-    top: 630px;
-    left: -8px;
+    top: 610px;
+    left: 350px;
     color: var(--first-color);
     font-size: 35px;
     }
@@ -1000,8 +1000,8 @@ input {
 
     .fa-circle-xmark {
     position: absolute;
-    top: 646px;
-    left: -8px;
+    top: 635px;
+    left: 300px;
     color: var(--first-color);
     font-size: 35px;
     }
