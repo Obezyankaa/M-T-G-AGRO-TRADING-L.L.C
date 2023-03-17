@@ -126,7 +126,7 @@ sr.reveal(
            .experience__data, .experience__overlay,
            .place__card,
            .sponsor__content, .sponsor__title,
-           .footer__data, .footer__rights`,
+           .footer__data, .footer__contact__container, .footer__rights`,
   {
     origin: "top",
     interval: 100,
