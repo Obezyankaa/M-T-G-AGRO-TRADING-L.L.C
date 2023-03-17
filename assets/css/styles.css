@@ -892,8 +892,14 @@ input {
   color: var(--text-color);
 }
 
+.footer__contact__heading {
+  margin-bottom: 15px;
+}
+
 .footer__text__block {
   padding-top: 10px;
+  display: inline;
+  border-bottom: 2px solid #ccc4c3;
 }
 
 .footer__link:hover {
