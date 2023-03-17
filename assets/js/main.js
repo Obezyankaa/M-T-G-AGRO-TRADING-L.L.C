@@ -179,15 +179,18 @@ themeButton.addEventListener('click', () => {
 let content = document.getElementById("content");
 let show = document.getElementById("showContent");
 let hide = document.getElementById("hideContent");
+const TestscrollUp = document.getElementById("scroll-up");
+
 
 show.addEventListener("click", () => {
     content.style.display = "block";
     document.body.style.overflow = "hidden";
+    TestscrollUp.style.display = "none";
 
 });
 
 hide.addEventListener("click", () => {
     content.style.display = "none";
     document.body.style.overflow = "scroll";
-
+    TestscrollUp.style.display = "block";
 });

@@ -934,6 +934,7 @@ input {
 }
 
 .modal {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 35em;
@@ -954,12 +955,27 @@ input {
   }
 }
 
+.fa-circle-xmark {
+  position: absolute;
+  top: -15px;
+  left: -13px;
+  color: var(--first-color);
+  font-size: 35px;
+}
+
+.fa-circle-xmark:hover {
+  color: rgb(199, 30, 30);
+  cursor: pointer;
+}
+
 .modal__link {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .modal__link span:hover {
   opacity: 0.6;
+  display: inline;
+  border-bottom: 2px solid var(--first-color);
 }
 
 @media screen and (max-width: 500px) {
@@ -967,12 +983,27 @@ input {
       width: 27em;
       margin-top: 80px;
     }
+     .fa-circle-xmark {
+    position: absolute;
+    top: 630px;
+    left: -8px;
+    color: var(--first-color);
+    font-size: 35px;
+    }
 }
 
 @media screen and (max-width: 400px) {
    .modal {
-      width: 25em;
-      margin-top: 70px;
+    width: 25em;
+    margin-top: 100px;
+    }
+
+    .fa-circle-xmark {
+    position: absolute;
+    top: 646px;
+    left: -8px;
+    color: var(--first-color);
+    font-size: 35px;
     }
 }
 
