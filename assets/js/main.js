@@ -176,6 +176,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+// функции для модельньного окна с контактами 
 let content = document.getElementById("content");
 let show = document.getElementById("showContent");
 let hide = document.getElementById("hideContent");
@@ -193,4 +194,32 @@ hide.addEventListener("click", () => {
     content.style.display = "none";
     document.body.style.overflow = "scroll";
     TestscrollUp.style.display = "block";
+});
+
+
+/*==================== Увеличивает фотографию на главном экране, увеличивает только ёё ====================*/
+
+$(function () {
+  $(".minimized").click(function (event) {
+    var i_path = $(this).attr("src");
+    $("body").append(
+      '<div id="overlay"></div><div id="magnify"><img src="' +
+        i_path +
+        '"><div id="close-popup"><i></i></div></div>'
+    );
+    $("#magnify").css({
+      left: ($(document).width() - $("#magnify").outerWidth()) / 2,
+      // top: ($(document).height() - $('#magnify').outerHeight())/2 upd: 24.10.2016
+      top: ($(window).height() - $("#magnify").outerHeight()) / 2,
+    });
+    $("#overlay, #magnify").fadeIn("fast");
+  });
+
+  $("body").on("click", "#close-popup, #overlay", function (event) {
+    event.preventDefault();
+
+    $("#overlay, #magnify").fadeOut("fast", function () {
+      $("#close-popup, #magnify, #overlay").remove();
+    });
+  });
 });
