@@ -1026,9 +1026,20 @@ input {
   }
 }
 
+
+@keyframes rota {
+ 25% { transform: rotate(360deg); }
+}
+
+.fa-circle-xmark:hover {
+  animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+} 
+
 .fa-circle-xmark {
   position: absolute;
-  top: -15px;
+  top: -9px;
   left: -13px;
   color: var(--first-color);
   font-size: 35px;
