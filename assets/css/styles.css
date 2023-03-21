@@ -705,12 +705,14 @@ input {
 }
 
 .experience__number {
-  font-size: var(--h2-font-size);
+  /* font-size: var(--h2-font-size); */
   font-weight: var(--font-semi-bold);
   margin-bottom: var(--mb-0-5);
 }
 
 .experience__description {
+  display: block;
+  border-top: 2px solid #ccc4c3;
   font-size: var(--small-font-size);
 }
 
