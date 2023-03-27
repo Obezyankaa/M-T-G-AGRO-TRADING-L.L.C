@@ -126,7 +126,7 @@ sr.reveal(
            .experience__data, .experience__overlay,
            .place__card,
            .sponsor__content, .sponsor__title,
-           .footer__data, .footer__contact__container, .footer__rights`,
+           .footer__data, .footer__contact__container, .footer__rights, .MAP__GOOGLE`,
   {
     origin: "top",
     interval: 100,
@@ -175,26 +175,6 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-
-// функции для модельньного окна с контактами 
-let content = document.getElementById("content");
-let show = document.getElementById("showContent");
-let hide = document.getElementById("hideContent");
-const TestscrollUp = document.getElementById("scroll-up");
-
-
-show.addEventListener("click", () => {
-    content.style.display = "block";
-    document.body.style.overflow = "hidden";
-    TestscrollUp.style.display = "none";
-
-});
-
-hide.addEventListener("click", () => {
-    content.style.display = "none";
-    document.body.style.overflow = "scroll";
-    TestscrollUp.style.display = "block";
-});
 
 
 /*==================== Увеличивает фотографию на главном экране, увеличивает только ёё ====================*/
