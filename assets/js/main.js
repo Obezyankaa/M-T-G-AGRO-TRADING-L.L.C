@@ -39,17 +39,17 @@ function scrollHeader(){
 window.addEventListener('scroll', scrollHeader)
 
 /*==================== SWIPER DISCOVER ====================*/
-let swiper = new Swiper(".discover__container", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    loop: true,
-    spaceBetween: 32,
-    coverflowEffect: {
-        rotate: 0,
-    },
-})
+// let swiper = new Swiper(".discover__container", {
+//     effect: "coverflow",
+//     grabCursor: true,
+//     centeredSlides: true,
+//     slidesPerView: "auto",
+//     loop: true,
+//     spaceBetween: 32,
+//     coverflowEffect: {
+//         rotate: 0,
+//     },
+// })
 
 /*==================== VIDEO ====================*/
 const videoFile = document.getElementById('video-file'),
@@ -73,15 +73,15 @@ function playPause(){
 
     }
 }
-videoButton.addEventListener('click', playPause)
+// videoButton.addEventListener('click', playPause)
 
-function finalVideo(){
-    // Video ends, icon change
-    videoIcon.classList.remove('ri-pause-line')
-    videoIcon.classList.add('ri-play-line')
-}
-// ended, when the video ends
-videoFile.addEventListener('ended', finalVideo)
+// function finalVideo(){
+//     // Video ends, icon change
+//     videoIcon.classList.remove('ri-pause-line')
+//     videoIcon.classList.add('ri-play-line')
+// }
+// // ended, when the video ends
+// videoFile.addEventListener('ended', finalVideo)
 
 
 /*==================== SHOW SCROLL UP ====================*/ 
@@ -222,4 +222,18 @@ $(function () {
       $("#close-popup, #magnify, #overlay").remove();
     });
   });
+});
+
+var swiper = new Swiper(".blog-slider", {
+  spaceBetween: 30,
+  effect: "fade",
+  loop: true,
+  mousewheel: {
+    invert: false,
+  },
+  // autoHeight: true,
+  pagination: {
+    el: ".blog-slider__pagination",
+    clickable: true,
+  },
 });

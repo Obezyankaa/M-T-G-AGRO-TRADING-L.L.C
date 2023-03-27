@@ -17,76 +17,79 @@
         <!--=============== SWIPER CSS ===============-->
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>M T G AGRO TRADING L.L.C</title>
     </head>
     <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <span class="nav__logo">
-                    <a href="#home">
-                        <img class="nav__logo__img" src="./assets/img/logo-PhotoRoom.png-PhotoRoom.png" alt="">
-                    </a>
-                </span>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About Us</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#discover" class="nav__link">Values</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contacts" class="nav__link">Contacts</a>
-                        </li>
-                    </ul>
-
-                   <div class="nav__dark">
-                        <!-- Theme change button -->
-                        <!-- <span class="change-theme-name">Dark mode</span> -->
-                        <i class="ri-moon-line change-theme" id="theme-button">
-                            <span class="change-theme-name">Dark mode</span>
-                        </i>
+        <div id="none">
+            <header class="header" id="header">
+                <nav class="nav container">
+                    <span class="nav__logo">
+                        <a href="#home">
+                            <img class="nav__logo__img" src="./assets/img/logo-PhotoRoom.png-PhotoRoom.png" alt="">
+                        </a>
+                    </span>
+    
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link active-link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#about" class="nav__link">About Us</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#discover" class="nav__link">Values</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#contacts" class="nav__link">Contacts</a>
+                            </li>
+                        </ul>
+    
+                       <div class="nav__dark">
+                            <!-- Theme change button -->
+                            <!-- <span class="change-theme-name">Dark mode</span> -->
+                            <i class="ri-moon-line change-theme" id="theme-button">
+                                <span class="change-theme-name">Dark mode</span>
+                            </i>
+                        </div>
+    
+                        <i class="ri-close-line nav__close" id="nav-close"></i>
                     </div>
-
-                    <i class="ri-close-line nav__close" id="nav-close"></i>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-function-line"></i>
+                    </div>
+                </nav>
+    
+                 <!--=============== FONTAWESOME ===============-->
+                <div class="alert hide__alert">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span class="mgs">Warning: Block in development❗</span>
+                    <span class="close-btn">
+                        <i class="fas fa-times"></i>
+                    </span>
                 </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-function-line"></i>
-                </div>
-            </nav>
-
-             <!--=============== FONTAWESOME ===============-->
-            <div class="alert hide__alert">
-                <i class="fas fa-exclamation-circle"></i>
-                <span class="mgs">Warning: Block in development❗</span>
-                <span class="close-btn">
-                    <i class="fas fa-times"></i>
-                </span>
-            </div>
-        </header>
+            </header>
+        </div>
 
         <main class="main">
             <!--==================== HOME ====================-->
-            <section class="home" id="home">
-                <img src="assets/img/foneOne.jpg" alt="" class="home__img">
+            <section class="home none" id="home">
+                <img src="assets/img/img_fon.png" alt="" class="home__img">
 
                 <div class="home__container container grid">
-                    <div class="home__data">
+                    <!-- <div class="home__data">
                         <span class="home__data-subtitle">Discover your taste</span>
                         <h1 class="home__data-title">Explore The <br> Best <b>New<br>Flavors</b></h1>
-                        <!-- <a href="#" class="button">Explore</a> -->
+                         <a href="#" class="button">Explore</a> 
 
-                    </div>
+                    </div> -->
 
-                    <div class="home__social">
+                    <!-- <div class="home__social">
                         <a href="https://m.facebook.com/389266474563037/" target="_blank" class="home__social-link">
                             <i class="ri-facebook-box-fill"></i>
                         </a>
@@ -96,9 +99,9 @@
                         <a href="https://t.me/miratorg_official" target="_blank" class="home__social-link">
                             <i class="ri-telegram-fill"></i>
                         </a>
-                    </div>
+                    </div> -->
 
-                    <div class="home__info">
+                    <!-- <div class="home__info">
                         <div>
                             <span class="home__info-title">learn more about our farm</span>
                             <a href="#" class="button button--flex button--link home__info-button footer__click">
@@ -109,22 +112,21 @@
                         <div class="home__info-overlay image__wrapper">
                             <img src="assets/img/kovboi_stado.jpeg" alt="" class="home__info-img minimized">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section> 
  
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
-                <div class="about__container container grid">
+                <div class="about__container grid">
                     <div class="about__data">
-                        <h2 class="section__title about__title">Company’s mission<br></h2>
-                        <p class="about__description">«Miratorg» is actively developing a new meat culture. We improving the Russian quality of life through the quality of food and a fundamentally new eating experience.<br><br> Being the undisputed leader in the Russian market, the company is developing new segments every year, setting higher quality standards for the entire market
-and developing Russia’s economy.
+                        <h2 class="section__title about__title">About Us<br></h2>
+                        <p class="about__description">MTG is an exclusive distributor of premium quality food products, operating in the MENA and South East Asia. We are proud of our strict selection of products that we represent and promote in the international arena. We offer only the most recognized bestsellers that won recognition for their outstanding taste and quality.
                         </p>
                         <!-- <a href="#" class="button">Reserve a place</a> -->
                     </div>
 
-                    <div class="about__img">
+                    <!-- <div class="about__img">
                         <div class="about__img-overlay  image__wrapper">
                             <img src="assets/img/kovboy-loshad-pole-ferma.jpg" alt="" class="about__img-one minimized">
                         </div>
@@ -132,57 +134,183 @@ and developing Russia’s economy.
                         <div class="about__img-overlay image__wrapper">
                             <img src="assets/img/solntse-pole-korovy-stado.jpg" alt="" class="about__img-two minimized">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             
             <!--==================== DISCOVER ====================-->
             <section class="discover section" id="discover">
-                <h2 class="section__title">Our Values</h2>
-                
+                <h2 class="section__title">Products</h2>
                 <div class="discover__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--==================== DISCOVER 1 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <img src="assets/img/health_food.jpg" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Health</h2>
-                                <span class="discover__description">Eco-friendly production that meets all international standards.</span>
-                            </div>
-                        </div>
+                    <div class="test__slider">
+                    <div class="blog-slider">
+                      <div class="blog-slider__wrp swiper-wrapper">
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            
+                            <img src="./assets/img/1.png" alt="Black Angus Beef photo">
+                          </div>
+                          <div class="blog-slider__content">
+                            <h2 class="blog-slider__title">Black Angus Beef</h2>
+                            <div class="blog-slider__text">
+                                The secret of real meat is the correctly selected beef breed of Aberdeen Angus steers, fattening with grain grown in farm fields, processing at the latest automated enterprise and quality control at all stages of production. Marbled beef is meat with high fat concentration.<br><br>
 
-                        <!--==================== DISCOVER 2 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <img src="assets/img/taste_food.jpg" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Taste</h2>
-                                <span class="discover__description">Miratorg creates high quality products for people with excellent taste.</span>
-                            </div>
-                        </div>
+Marbled beef steaks are the standard of rich taste, juiciness and tenderness of meat dishes. The character of the steak largely depends on the cut (part of the carcass) from which it is made. Middle cuts are known all over the world for the simplicity of cooking and guaranteed excellent results, secondary cuts are popular among experienced cooks for a rich range of flavors and a variety of serving.<br><br>
 
-                        <!--==================== DISCOVER 3 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <img src="assets/img/cowboy_girl.jpg" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Our Employees</h2>
-                                <span class="discover__description">People are the main value of Miratorg. The holding has more than 26,000 employees</span>
+We distribute a full range of premium and secondary cuts and steaks from marbled beef.
                             </div>
+                          </div>
                         </div>
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            <img src="./assets/img/1.png" alt="Black Angus Beef photo">
+                          </div>
+                          <div class="blog-slider__content">
+                            <h2 class="blog-slider__title">The Black Angus advantages</h2>
+                            <div class="blog-slider__text">
+                               100 % quality, naturalness and the unequalled taste are the main advantages of all the Black Angus products line. Cattle grows without the usage of antibiotics and growth hormones. All steers gain weight under comfortable and humane farming conditions- firstly on the farms and pastures, then in the specialized fattening facilities. Minimum contact with humans help the cattle grow without stress, which improves qualities of meat.
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            <img src="https://www.wyndfordwagyu.com/wp-content/uploads/2022/06/wyndford-wagyu-sirloin-steak.jpg" alt="Wagyu Beef photo">
+                          </div>
+                          <div class="blog-slider__content">
+                            <h2 class="blog-slider__title">Wagyu Beef</h2>
+                            <div class="blog-slider__text">Long-term fattening according to the Slow Grow system, completely stress-free content and the best genetics allow our suppliers to create meat of category B3. No wonder Wagyu beef is considered a delicacy along with white truffle, foie gras and Swiss cheeses.</div>
+                          </div>
+                        </div>
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            
+                            <img src="https://www.wyndfordwagyu.com/wp-content/uploads/2022/06/wyndford-wagyu-sirloin-steak.jpg" alt="Wagyu Beef photo">
+                          </div>
+                          <div class="blog-slider__content">
+                            <h2 class="blog-slider__title">The Wagyu Beef advantages</h2>
+                            <div class="blog-slider__text">
+                                Wagyu is a world–famous delicacy that, along with sushi and sake, has become a symbol of the Land of the Rising Sun. There are legends about the cultivation of steers of this breed: as if on Japanese farms they are soldered off with beer and sake, massaged daily and hung on belts so that the animal moves as little as possible.
+However, in fact, to get real Wagyu beef, you only need the best genetics, the right nutrition system and completely stress-free content. Bulls are fattened according to the Slow Grow system for 500 days on a diet of corn, silage and pure spring water. This allows them to gain weight gradually, so fat is formed inside the muscles and creates marbling.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            
+                            <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2020/01/wagyu-beef.jpg?quality=82&strip=1" alt="Mix Breed photo">
+                          </div>
+                          <div class="blog-slider__content">
+                            <h2 class="blog-slider__title">Mix Breed</h2>
+                            <div class="blog-slider__text">
+                                This is the selected meat of young bulls grown on the best farms in the countryside. They eat only natural food and receive special care and attention. This is how farmers we work with create a delicious and healthy product that meets the highest quality standards.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            
+                            <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2020/01/wagyu-beef.jpg?quality=82&strip=1" alt="Mix Breed photo">
+                          </div>
+                          <div class="blog-slider__content">
+                            <h2 class="blog-slider__title">The Mix Breed advantages</h2>
+                            <div class="blog-slider__text">
+                                Free grazing of animals is one of the main conditions for their maintenance, thanks to which farmers get healthy cattle.
+The diet of animals includes both herbs and hay, as well as cereals. Thanks to such a combined diet, bulls grow up healthy, with strong immunity and developed muscle mass.
+The natural conditions in which the bulls live, minimal interference in their lives by people and careful care affect the quality of the finished product. Observing fairly simple principles of keeping and raising livestock, manufacturers get delicious and tender meat.
 
-                        <!--==================== DISCOVER 4 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <img src="assets/img/diego-romeo-XjnNi8XyoRY-unsplash.jpg" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Responsibility</h2>
-                                <span class="discover__description">Miratorg is one of the largest employers in the agricultural sector of Russia.</span>
                             </div>
+                          </div>
                         </div>
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            
+                            <img src="https://www.keziefoods.co.uk/wp-content/uploads/2021/03/Wagyu-Beef-Rump-Steaks-250g-2-in-a-pack.jpg" alt="">
+                          </div>
+                          <div class="blog-slider__content">
+                            <h2 class="blog-slider__title">Lamb Dorper </h2>
+                            <div class="blog-slider__text">
+                                Only the meat of young lambs no older than 4 months can be called young lamb. It is an exclusively dietary product rich in proteins, essential amino acids and vitamins. Dorper lambs are highly regarded as a prime lamb producing breed as they are fast maturing with the ability to produce a high-quality carcass with excellent conformation and fat distribution. Our manufacturers raise their lambs on a modern eco-farms, where farm-workers closely monitor their diet and health. Everything is under strict control: from natural feeds to stress-free animal rearing technologies. This is a guarantee of excellent quality lamb on your table.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            
+                            <img src="https://cdn.shopify.com/s/files/1/0591/0629/5985/products/11.png?v=1631022303" alt="Rose Veal photo">
+                          </div>
+                          <div class="blog-slider__content">
+                            <h2 class="blog-slider__title">Rose Veal</h2>
+                            <div class="blog-slider__text">
+                                Pink veal is a dietary meat of calves under the age of 8 months.  It has a delicate structure and a mild taste that goes well with different side dishes and sauces. It is from veal that the main delicacies are prepared in all cuisines of the world: from Georgian chakapuli to Italian tagliata or veal blanket, which are so appreciated by French gourmets. The meat of calves is low in fat and has a lot of useful trace elements and protein, which is easily digested.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            <img src="https://www.mashed.com/img/gallery/false-facts-about-pork-everyone-actually-believes/l-intro-1644941996.jpg" alt="Pork photo">
+                          </div>
+                          <div class="blog-slider__content">
+                            <h2 class="blog-slider__title">Pork</h2>
+                            <div class="blog-slider__text">
+                                Our manufacturers have been a permanent leader in this segment since 2010.
+And because of that our pork meets all modern quality standards. We also distribute Tender Pork
+which is our new unique product. Pig meat undergoes a wet aging procedure — then it is packed in vacuum bags and store it in special rooms for three weeks. This is the optimal period for which pork acquires a rich and unusual taste, becomes especially soft and tender. Now everyone can cook an exquisite meat delicacy in their own kitchen without much effort!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            
+                            <img src="https://cdn.shopify.com/s/files/1/0223/3837/1664/products/096---Bratwurst_2048x.jpg?v=1560267092" alt="Sausage Products photo">
+                          </div>
+                          <div class="blog-slider__content">
+                            <h2 class="blog-slider__title">Sausage Products</h2>
+                            <div class="blog-slider__text">
+                                Sausage products we distribute are made from excellent meat from farms of our manufacturers. Unique cooking technologies, knowledge of traditions and good taste – that’s what our sausages is. We care about those who buy our products, so we never compromise on quality issues.
+In our catalog we have sausages with milk, eggs, spicy nutmeg. And all of this with tasty natural spices!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            
+                            <img src="https://www.livveganstrong.com/wp-content/uploads/2022/04/Close-Up-Tofu-Nuggets.jpg" alt="Chicken Nuggets photo">
+                          </div>
+                          <div class="blog-slider__content">
+                            <h2 class="blog-slider__title">Chicken Nuggets</h2>
+                            <div class="blog-slider__text">
+                                Chicken nuggets are the most tender pieces of poultry meat in golden breading. At the same time crispy and juicy, they will appeal to even the most sophisticated gourmet.
+
+Chicken snacks in crispy breaded wheat crackers are a great option for a quick snack. Combine hearty slices with classic ketchup, soft cheese or bright sweet and sour sauce. Create your own flavor combinations, complement your favorite dishes and surprise your friends with our crumpets.
+The entire range is presented in our catalog.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            
+                            <img src="https://jamilghar.com/wp-content/uploads/2022/01/grilledtandoorichicken23-scaled.jpeg" alt="Chicken photo">
+                          </div>
+                          <div class="blog-slider__content">
+                            <h2 class="blog-slider__title">Chicken</h2>
+                            <div class="blog-slider__text">
+                                We offer you the most delicious and healthy poultry products, all of them were produced from the best quality chicken, grown on the balanced natural feed. In terms of protein, poultry meat is not inferior to beef and lean pork, while the fat content in it is significantly less, as well as cholesterol harmful to health. Expand your daily menu with a dozen new dishes from delicious chicken - from BBQ wings and grilled sausages, baked juicy chicken breasts, Asian style to curry chicken!
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="blog-slider__pagination"></div>
                     </div>
+                    </div>
+                </div>
                 </div>
             </section>
 
+
             <!--==================== EXPERIENCE ====================-->
-            <section class="experience section">
+            <!-- <section class="experience section">
                 <h2 class="section__title"> We Achieved These Results <br> With Our Experience</h2>
 
                 <div class="experience__container container grid">
@@ -213,15 +341,15 @@ and developing Russia’s economy.
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!--==================== VIDEO ====================-->
-            <section class="video section">
+            <!-- <section class="video section">
                 <h2 class="section__title"> <b>Rodeo </b> 2022</h2>
 
                 <div class="video__container container">
-                    <!-- <p class="video__description">a few words about managing the flock by our ancestors
-                    </p> -->
+                    <p class="video__description">a few words about managing the flock by our ancestors
+                    </p>
 
                     <div class="video__content">
                         <video id="video-file">
@@ -233,7 +361,7 @@ and developing Russia’s economy.
                         </button>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             
             <!-- <section class="place section" id="place">
@@ -366,20 +494,14 @@ and developing Russia’s economy.
             </section> -->
             
             <!--==================== SPONSORS ====================-->
-            <section class="sponsor section">
+            <!-- <section class="sponsor section">
                 <h2 class="section__title sponsor__title"> Our <b>Partners</b></h2>
                 <div class="sponsor__container container grid">
-                    <!-- <div class="sponsor__content">
-                        <img src="assets/img/partners/k_b.jpeg" alt="" class="sponsor__img">
-                    </div> -->
                     <div class="sponsor__content">
                         <a href="https://magnit.ru/" target="_blank" rel="noopener noreferrer">
                             <img src="assets/img/partners/magnit.svg.png" alt="" class="sponsor__img">
                         </a>
                     </div>
-                    <!-- <div class="sponsor__content">
-                        <img src="assets/img/partners/metro.svg.png" alt="" class="sponsor__img">
-                    </div> -->
                     <div class="sponsor__content">
                         <a href="https://www.perekrestok.ru/" target="_blank" rel="noopener noreferrer">
                             <img src="assets/img/partners/perecrestok.svg.png" alt="" class="sponsor__img">
@@ -391,7 +513,7 @@ and developing Russia’s economy.
                         </a>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
 
         <!--==================== FOOTER ====================-->
@@ -586,6 +708,8 @@ and developing Russia’s economy.
         <!--=============== SWIPER JS ===============-->
         <script src="assets/js/swiper-bundle.min.js"></script>
         <script src="assets/js/gsap.min.js"></script>
+        <script src="assets/js/bundle.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
 
         <!--=============== FONTAWESOME ===============-->
       <script src="https://kit.fontawesome.com/0fcfc793a0.js" crossorigin="anonymous"></script>

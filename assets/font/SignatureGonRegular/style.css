@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Signature Gon';
+    src: local('Signature Gon Regular'), local('Signature-Gon-Regular'),
+        url('SignatureGonRegular.woff2') format('woff2'),
+        url('SignatureGonRegular.woff') format('woff'),
+        url('SignatureGonRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
