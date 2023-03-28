@@ -852,7 +852,7 @@ input {
 }
 @media screen and (max-width: 768px) {
   .blog-slider__img {
-    transform: translateY(-50%);
+    transform: translateY(-90%);
     width: 90%;
   }
 }
@@ -902,6 +902,9 @@ input {
   .blog-slider__title {
    font-size: 50px;
   }
+  .blog-slider__img {
+    flex-shrink: initial;
+  }
 }
 
 .blog-slider__text {
@@ -928,6 +931,11 @@ input {
     width: 100%;
   }
 }
+.swiper-container {
+  overflow: inherit;
+  padding-top: 12rem;
+}
+
 .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
   bottom: 10px;
   left: 0;
@@ -948,7 +956,7 @@ input {
   .blog-slider__pagination {
     transform: translateX(-50%);
     left: 50% !important;
-    top: 300px;
+    top: 670px;
     width: 100% !important;
     display: flex;
     justify-content: center;
