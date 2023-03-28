@@ -115,7 +115,7 @@ window.addEventListener('scroll', scrollActive)
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
     distance: '60px',
-    duration: 2800,
+    duration: 3800,
     // reset: true,
 })
 
@@ -126,18 +126,21 @@ sr.reveal(
            .experience__data, .experience__overlay,
            .place__card,
            .sponsor__content, .sponsor__title,
-           .footer__data, .footer__contact__container, .footer__rights, .MAP__GOOGLE, .geography__container`,
+           .footer__data, .geography__title, .products__title, .footer__contact__container, .footer__rights, .MAP__GOOGLE, .geography__container`,
   {
     origin: "top",
-    interval: 100,
+    interval: 200,
   }
 );
 
-sr.reveal(`.about__data, 
+sr.reveal(
+  `.about__data, 
            .video__description,
-           .subscribe__description`,{
-    origin: 'left',
-})
+           .subscribe__description`,
+  {
+    origin: "left",
+  }
+);
 
 sr.reveal(`.about__img-overlay, 
            .video__content,
