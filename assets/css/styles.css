@@ -748,8 +748,8 @@ input {
 }
 @media screen and (max-width: 768px) {
   .blog-slider {
-    min-height: 500px;
-    height: auto;
+    height: 700px;
+    box-shadow: none;
     /* margin: 180px auto; */
   }
 }
@@ -898,6 +898,12 @@ input {
   color: white;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 768px) {
+  .blog-slider__title {
+   font-size: 50px;
+  }
+}
+
 .blog-slider__text {
   color: white;
   margin-bottom: 30px;
@@ -1365,6 +1371,7 @@ input {
     }
     .geography__container {
       flex-direction: column;
+      padding-bottom: 25px;
     }
 }
 
@@ -1784,20 +1791,13 @@ input {
 
 @media screen and (max-width: 900px) {
  .geography__container img {
-  width: 60px;
+  width: 60%;
  }
  .geography__heading {
   font-size: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
  }
  .geography__heading ul li {
   font-size: 2rem;
- }
-}
-
-
-@media screen and (max-width: 767px) {
- .footer {
-  padding: 0;
  }
 }
