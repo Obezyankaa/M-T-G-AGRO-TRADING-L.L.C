@@ -650,9 +650,11 @@ input {
 .about__description {
   background-color: var(--light_grey-color);
   font-weight: 600;
-  padding: 5rem 20rem;
+  padding: 8rem 17rem;
   margin-bottom: var(--mb-2);
   color: var(--dark_grey-сolor);
+  border-radius: 2rem;
+  line-height: 2;
 }
 
 .about__img {
@@ -1191,6 +1193,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
 }
 
 .geography__heading {
@@ -1309,7 +1312,7 @@ input {
   gap: 1.5rem;
   background: var(--blue-color);
   box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
-  border-radius: 0 0 0.5rem 0.5rem ;
+  border-radius: 1rem 1rem 0 0 ;
   overflow: hidden;
 }
 
@@ -1612,9 +1615,9 @@ input {
     padding: 8rem 0 0rem;
   }
 
-  .footer {
+  /* .footer {
     padding-top: 0;
-  }
+  } */
   .home__container {
     height: 100vh;
     grid-template-rows: 1.8fr .5fr;
@@ -1785,6 +1788,7 @@ input {
  }
  .geography__heading {
   font-size: 3rem;
+  margin-bottom: 3rem;
  }
  .geography__heading ul li {
   font-size: 2rem;
