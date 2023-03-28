@@ -126,7 +126,7 @@ sr.reveal(
            .experience__data, .experience__overlay,
            .place__card,
            .sponsor__content, .sponsor__title,
-           .footer__data, .footer__contact__container, .footer__rights, .MAP__GOOGLE`,
+           .footer__data, .footer__contact__container, .footer__rights, .MAP__GOOGLE, .geography__container`,
   {
     origin: "top",
     interval: 100,
