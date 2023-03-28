@@ -29,7 +29,7 @@
   --first-color: hsl(var(--hue-color), 64%, 22%);
   --first-color-second: hsl(var(--hue-color), 64%, 22%);
   --first-color-alt: hsl(var(--hue-color), 64%, 15%);
-  --title-color: hsl(var(--hue-color), 64%, 18%);
+  --title-color: hsl(var(--hue-color), 92%, 46%);
   --text-color: hsl(var(--hue-color), 24%, 20%);
   --text-color-light: hsl(var(--hue-color), 8%, 60%);
   --input-color: hsl(var(--hue-color), 24%, 97%);
@@ -155,7 +155,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
-  color: var(--text-color);
+  color: var(--light_grey-color);
 }
 
 h1, h2, h3 {
@@ -211,7 +211,6 @@ input {
 .section__title {
   font-size: var(--h2-font-size);
   font-weight: 500;
-  color: var(--red-color);
   text-align: center;
   text-transform: capitalize;
   /* margin-bottom: var(--mb-2); */
@@ -749,7 +748,7 @@ input {
   .blog-slider {
     min-height: 500px;
     height: auto;
-    margin: 180px auto;
+    /* margin: 180px auto; */
   }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
@@ -870,7 +869,7 @@ input {
 }
 @media screen and (max-width: 768px) {
   .blog-slider__content {
-    margin-top: -80px;
+    margin-top: -180px;
     text-align: center;
     padding: 0 30px;
   }
@@ -941,7 +940,7 @@ input {
   .blog-slider__pagination {
     transform: translateX(-50%);
     left: 50% !important;
-    top: 205px;
+    top: 300px;
     width: 100% !important;
     display: flex;
     justify-content: center;
@@ -1240,7 +1239,7 @@ input {
 
 .footer__copy, .footer__terms-link, .footer__link {
   font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  color: var(--light_grey-color);
 }
 
 .footer__terms {
@@ -1324,9 +1323,8 @@ input {
 @media (max-width: 964px) {
     .contact-container {
       margin: 0 auto;
-      width: 90%;
-      height: 250px;
-
+      /* width: 90%; */
+      /* height: 250px; */
     }
     .map iframe {
       height: 400px;
@@ -1337,7 +1335,7 @@ input {
     .contact-container {
      grid-template-columns: 1fr;
      gap: 1rem;
-     margin-top: 20rem !important ;
+     /* margin-top: 20rem !important ; */
     }
 }
 
@@ -1735,5 +1733,15 @@ input {
   }
   .home__container, .home__img {
     height: 100vh;
+  }
+}
+
+
+@media screen and (max-width: 428px) {
+  .grid{
+    display: block;
+  }
+  .about__description {
+    padding: 7rem 4rem;
   }
 }
