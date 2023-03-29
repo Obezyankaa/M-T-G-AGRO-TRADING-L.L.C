@@ -761,7 +761,7 @@ input {
 }
 @media screen and (max-width: 768px) {
   .blog-slider {
-    height: 635px;
+    height: 680px;
     box-shadow: none;
     /* margin: 180px auto; */
   }
@@ -870,13 +870,11 @@ input {
   }
 }
 @media screen and (max-width: 576px) {
-  .blog-slider__img {
-    width: 95%;
-    height: 0px;
-  }
    .blog-slider__img { 
     width: 300px;
     height: 300px;
+    overflow: inherit;
+    box-shadow:none
    }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
@@ -974,7 +972,7 @@ input {
   .blog-slider__pagination {
     transform: translateX(-50%);
     left: 50% !important;
-    top: 600px;
+    top: 655px;
     width: 100% !important;
     display: flex;
     justify-content: center;
