@@ -23,6 +23,8 @@
   /*Green dark 190 - Green 171 - Grren Blue 200*/
   --hue-color: 0;
   --black-theme : 209;
+  --color-block-white: 213;
+  --color-block-blue: 40;
 
 
   /* HSL color mode */
@@ -30,13 +32,14 @@
   --first-color-second: hsl(var(--hue-color), 64%, 22%);
   --first-color-alt: hsl(var(--hue-color), 64%, 15%);
   --title-color: hsl(var(--hue-color), 92%, 46%);
-  --text-color: hsl(var(--hue-color), 24%, 20%);
+  --text-color: hsl(var(--hue-color), 1%, 13%);
   --text-color-light: hsl(var(--hue-color), 8%, 60%);
   --input-color: hsl(var(--hue-color), 24%, 97%);
   --body-color: hsl(var(--hue-color), 0%, 100%);
-  --white-color: #FFF;
+  --block-light: hsl(var(--hue-color), 0%, 94.9%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
+  --white-color: #FFF;
   --red-color: rgb(255, 0, 35);
   --blue-color: rgb(40,61,86);
   --dark_grey-сolor: rgb(47,47,47);
@@ -95,11 +98,18 @@
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 54%, 12%);
   --title-color: hsl(var(--hue-color), 24%, 95%);
-  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --text-color: hsl(var(--hue-color), 28%, 95%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
   --body-color: hsl(var(--black-theme), 29%, 12%);
+  --block-light: hsl(var(--color-block-white), 35%, 25%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+.test__tema {
+  background-color: var(--block-light);
+  width: 300px;
+  height: 300px;
 }
 
 /* временно выключил хеадер */
@@ -661,11 +671,11 @@ input {
 }
 
 .about__description {
-  background-color: var(--light_grey-color);
+  background-color: var(--block-light);
   font-weight: 600;
   padding: 8rem 17rem;
   margin-bottom: var(--mb-2);
-  color: var(--dark_grey-сolor);
+  color: var(--text-color);
   border-radius: 2rem;
   line-height: 2;
 }
@@ -746,7 +756,7 @@ input {
   position: relative;
   max-width: 800px;
   margin: auto;
-  background: var(--blue-color);
+  background-color: var(--block-light);
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 25px;
   border-radius: 25px;
@@ -911,7 +921,7 @@ input {
 .blog-slider__title {
   font-size: 70px;
   font-weight: 500;
-  color: white;
+  color: var(--text-color);
   margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
@@ -924,7 +934,7 @@ input {
 }
 
 .blog-slider__text {
-  color: white;
+  color: var(--text-color);
   margin-bottom: 30px;
   line-height: 1.5em;
   padding-right: 1rem;
@@ -952,7 +962,7 @@ input {
   padding-top: 15rem;
 }
 
-.blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
+.blog-slider .swiper-container-horizontal > .swiper-pagination-bullet, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
   bottom: 10px;
   left: 0;
   width: 100%;
@@ -992,13 +1002,13 @@ input {
   height: 11px;
   display: block;
   border-radius: 10px;
-  background: var(--light_grey-color);
+  color: var(--text-color);
   opacity: 0.2;
   transition: all .3s;
 }
 .blog-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: var(--light_grey-color);
+  background: var(--title-color);
   height: 30px;
   box-shadow: 0px 0px 20px rgba(0, 42, 255, 0.3);
 }
@@ -1219,7 +1229,7 @@ input {
 
 /*=============== GEOGRAPHY ===============*/
 .geography__container {
-  background-color: var(--light_grey-color);
+  background-color: var(--block-light);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1230,12 +1240,12 @@ input {
   font-family: 'Signature Gon';
   font-weight: 500;
   font-size: 4rem;
-  color: #000;
+    color: var(--text-color);
 }
 
 .geography__text ul li {
   font-size: 1.2rem;
-  color: #000;
+  color: var(--text-color);
 }
 
 
@@ -1295,7 +1305,7 @@ input {
 
 .footer__copy, .footer__terms-link, .footer__link {
   font-size: var(--small-font-size);
-  color: var(--light_grey-color);
+  color: var(--text-color);
 }
 
 .footer__terms {
@@ -1340,7 +1350,7 @@ input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  background: var(--blue-color);
+  background-color: var(--block-light);
   box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
   border-radius: 1rem 1rem 0 0 ;
   overflow: hidden;
