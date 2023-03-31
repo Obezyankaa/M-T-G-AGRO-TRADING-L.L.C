@@ -780,6 +780,71 @@ input {
 .footer__terms-link:hover {
   color: var(--text-color);
 }
+.contact-container {
+  margin: auto;
+  width: 100%;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  background-color: var(--block-light);
+  box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+  border-radius: 1rem 1rem 0 0 ;
+  overflow: hidden;
+}
+
+.form-container {
+  padding: 20px;
+}
+
+.form__container__title {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact-form input {
+   width: 100%;
+   border: none;
+   outline: none;
+   background: #642021;
+   padding: 10px;
+   font-size: 0.9rem;
+   color: #ccc4c3;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 964px) {
+    .contact-container {
+      margin: 0 auto;
+      /* width: 90%; */
+      height: auto;
+    }
+    .map iframe {
+      height: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact-container {
+     grid-template-columns: 1fr;
+     gap: 1rem;
+     /* margin-top: 20rem !important ; */
+    }
+    .geography__container {
+      flex-direction: column;
+      padding-bottom: 25px;
+    }
+}
 
 /*========== SCROLL UP ==========*/
 .scrollup {
