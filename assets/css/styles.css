@@ -750,6 +750,10 @@ input {
   background-image: none;
 }
 
+.container__slider {
+  text-align: center;
+}
+
 .btn__halal,  .btn__non_halal{
   padding: 1rem;
   border-radius: 1rem;
@@ -757,6 +761,26 @@ input {
   background-color: var(--title-color);
   margin: 10px;
 }
+
+.block_swiper_one {
+  display: none;
+}
+
+.block_swiper_two {
+  display: none;
+}
+
+
+.block_swiper_one_BLOCK {
+  display: block;
+  background-color: #642021;
+}
+
+.block_swiper_two_BLOCK {
+  display: block;
+  background-color: #ffa502;
+}
+
 
 
 
@@ -967,35 +991,6 @@ input {
   filter: invert(0.5);
   transition: var(--img-transition);
 }
-
-.container_swiper{
-      max-width: 1280px;
-      margin: 0 auto;
-      height: 100%;
-    }
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-    }
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
 
 
 /*=============== GEOGRAPHY ===============*/

@@ -181,25 +181,6 @@ themeButton.addEventListener('click', () => {
 
 /*=============== DISCOVER ===============*/
 
-const btn1 = document.querySelector(".btn__halal");
-const btn2 = document.querySelector(".btn__non_halal");
-
-
-
-btn1.addEventListener("click", () => {
-    const swiper1 = document.querySelector(".container_swiper");
-    console.log(swiper1);
-    swiper1.classList.add("test1_2");
- 
-});
-
-btn2.addEventListener("click", () => {
-    const swiper2 = document.querySelector(".test2");
-    console.log(swiper2);
-    swiper2.classList.add("test2_2");
-});
-
-
 $(document).ready(function () {
   // Swiper: Slider
   new Swiper(".swiper-container", {
@@ -224,4 +205,24 @@ $(document).ready(function () {
       },
     },
   });
+});
+
+
+const btn1 = document.querySelector(".btn__halal");
+const btn2 = document.querySelector(".btn__non_halal");
+
+btn1.addEventListener("click", () => {
+  const swiper1 = document.querySelector(".block_swiper_one");
+  const swiper2 = document.querySelector(".block_swiper_two");
+  
+  swiper2.classList.remove("block_swiper_two_BLOCK");
+  swiper1.classList.add("block_swiper_one_BLOCK");
+});
+
+btn2.addEventListener("click", () => {
+  const swiper1 = document.querySelector(".block_swiper_one");
+  const swiper2 = document.querySelector(".block_swiper_two");
+  
+  swiper1.classList.remove("block_swiper_one_BLOCK");
+  swiper2.classList.add("block_swiper_two_BLOCK");
 });
