@@ -694,6 +694,26 @@ input {
   transition: var(--img-transition);
 }
 
+/*=============== GEOGRAPHY ===============*/
+.geography__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.geography__heading {
+  font-family: 'Signature Gon';
+  font-weight: 500;
+  font-size: 4rem;
+    color: var(--text-color);
+}
+
+.geography__text ul li {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
 /*=============== FOOTER ===============*/
 .footer__container {
   row-gap: 5rem;
@@ -1041,4 +1061,15 @@ input {
   .home__container, .home__img {
     height: 640px;
   }
+}
+
+
+
+.block__block {
+    height: 100vh;
+    background: #bad6d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
