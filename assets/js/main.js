@@ -38,50 +38,38 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*==================== SWIPER DISCOVER ====================*/
-let swiper = new Swiper(".discover__container", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    loop: true,
-    spaceBetween: 32,
-    coverflowEffect: {
-        rotate: 0,
-    },
-})
 
 /*==================== VIDEO ====================*/
-const videoFile = document.getElementById('video-file'),
-      videoButton = document.getElementById('video-button'),
-      videoIcon = document.getElementById('video-icon')
+// const videoFile = document.getElementById('video-file'),
+//       videoButton = document.getElementById('video-button'),
+//       videoIcon = document.getElementById('video-icon')
 
-function playPause(){ 
-    if (videoFile.paused){
-        // Play video
-        videoFile.play()
-        // We change the icon
-        videoIcon.classList.add('ri-pause-line')
-        videoIcon.classList.remove('ri-play-line')
-    }
-    else {
-        // Pause video
-        videoFile.pause(); 
-        // We change the icon
-        videoIcon.classList.remove('ri-pause-line')
-        videoIcon.classList.add('ri-play-line')
+// function playPause(){ 
+//     if (videoFile.paused){
+//         // Play video
+//         videoFile.play()
+//         // We change the icon
+//         videoIcon.classList.add('ri-pause-line')
+//         videoIcon.classList.remove('ri-play-line')
+//     }
+//     else {
+//         // Pause video
+//         videoFile.pause(); 
+//         // We change the icon
+//         videoIcon.classList.remove('ri-pause-line')
+//         videoIcon.classList.add('ri-play-line')
 
-    }
-}
-videoButton.addEventListener('click', playPause)
+//     }
+// }
+// videoButton.addEventListener('click', playPause)
 
-function finalVideo(){
-    // Video ends, icon change
-    videoIcon.classList.remove('ri-pause-line')
-    videoIcon.classList.add('ri-play-line')
-}
+// function finalVideo(){
+//     // Video ends, icon change
+//     videoIcon.classList.remove('ri-pause-line')
+//     videoIcon.classList.add('ri-play-line')
+// }
 // ended, when the video ends
-videoFile.addEventListener('ended', finalVideo)
+// videoFile.addEventListener('ended', finalVideo)
 
 
 /*==================== SHOW SCROLL UP ====================*/ 
@@ -121,7 +109,6 @@ const sr = ScrollReveal({
 
 
 sr.reveal(`.home__data, .home__social-link, .home__info,
-           .discover__container,
            .experience__data, .experience__overlay,
            .place__card,
            .sponsor__content,
@@ -172,3 +159,48 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
+const btn1 = document.querySelector(".btn__products");
+const btn2 = document.querySelector(".btn__products_no");
+
+btn1.addEventListener("click", () => {
+  const swiper1 = document.querySelector(".block_swiper_one");
+  const swiper2 = document.querySelector(".block_swiper_two");
+
+  swiper2.classList.remove("block_swiper_two_BLOCK");
+    swiper1.classList.add("block_swiper_one_BLOCK");
+    
+    let swiper = new Swiper(".discover__container", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      loop: true,
+      spaceBetween: 32,
+      coverflowEffect: {
+        rotate: 0,
+      },
+    });
+});
+
+btn2.addEventListener("click", () => {
+  const swiper1 = document.querySelector(".block_swiper_one");
+  const swiper2 = document.querySelector(".block_swiper_two");
+
+  swiper1.classList.remove("block_swiper_one_BLOCK");
+    swiper2.classList.add("block_swiper_two_BLOCK");
+    let swiper = new Swiper(".discover__container", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      loop: true,
+      spaceBetween: 32,
+      coverflowEffect: {
+        rotate: 0,
+      },
+    });
+});
+
