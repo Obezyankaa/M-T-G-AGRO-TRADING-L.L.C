@@ -39,17 +39,17 @@ function scrollHeader(){
 window.addEventListener('scroll', scrollHeader)
 
 /*==================== SWIPER DISCOVER ====================*/
-// let swiper = new Swiper(".discover__container", {
-//     effect: "coverflow",
-//     grabCursor: true,
-//     centeredSlides: true,
-//     slidesPerView: "auto",
-//     loop: true,
-//     spaceBetween: 32,
-//     coverflowEffect: {
-//         rotate: 0,
-//     },
-// })
+let swiper = new Swiper(".discover__container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 32,
+    coverflowEffect: {
+        rotate: 0,
+    },
+})
 
 /*==================== VIDEO ====================*/
 const videoFile = document.getElementById('video-file'),
@@ -73,15 +73,15 @@ function playPause(){
 
     }
 }
-// videoButton.addEventListener('click', playPause)
+videoButton.addEventListener('click', playPause)
 
-// function finalVideo(){
-//     // Video ends, icon change
-//     videoIcon.classList.remove('ri-pause-line')
-//     videoIcon.classList.add('ri-play-line')
-// }
-// // ended, when the video ends
-// videoFile.addEventListener('ended', finalVideo)
+function finalVideo(){
+    // Video ends, icon change
+    videoIcon.classList.remove('ri-pause-line')
+    videoIcon.classList.add('ri-play-line')
+}
+// ended, when the video ends
+videoFile.addEventListener('ended', finalVideo)
 
 
 /*==================== SHOW SCROLL UP ====================*/ 
@@ -115,32 +115,26 @@ window.addEventListener('scroll', scrollActive)
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
     distance: '60px',
-    duration: 3800,
+    duration: 2800,
     // reset: true,
 })
 
 
-sr.reveal(
-  `.home__data, .home__social-link, .home__info,
+sr.reveal(`.home__data, .home__social-link, .home__info,
            .discover__container,
            .experience__data, .experience__overlay,
            .place__card,
-           .sponsor__content, .sponsor__title,
-           .footer__data, .geography__title, .products__title, .footer__contact__container, .footer__rights, .MAP__GOOGLE, .geography__container`,
-  {
-    origin: "top",
-    interval: 200,
-  }
-);
+           .sponsor__content,
+           .footer__data, .footer__rights`,{
+    origin: 'top',
+    interval: 100,
+})
 
-sr.reveal(
-  `.about__data, 
+sr.reveal(`.about__data, 
            .video__description,
-           .subscribe__description`,
-  {
-    origin: "left",
-  }
-);
+           .subscribe__description`,{
+    origin: 'left',
+})
 
 sr.reveal(`.about__img-overlay, 
            .video__content,
@@ -178,51 +172,3 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-
-/*=============== DISCOVER ===============*/
-
-$(document).ready(function () {
-  // Swiper: Slider
-  new Swiper(".swiper-container", {
-    loop: true,
-    nextButton: ".swiper-button-next",
-    prevButton: ".swiper-button-prev",
-    slidesPerView: 3,
-    paginationClickable: true,
-    spaceBetween: 20,
-    breakpoints: {
-      1920: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-      1028: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      480: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-    },
-  });
-});
-
-
-const btn1 = document.querySelector(".btn__halal");
-const btn2 = document.querySelector(".btn__non_halal");
-
-btn1.addEventListener("click", () => {
-  const swiper1 = document.querySelector(".block_swiper_one");
-  const swiper2 = document.querySelector(".block_swiper_two");
-  
-  swiper2.classList.remove("block_swiper_two_BLOCK");
-  swiper1.classList.add("block_swiper_one_BLOCK");
-});
-
-btn2.addEventListener("click", () => {
-  const swiper1 = document.querySelector(".block_swiper_one");
-  const swiper2 = document.querySelector(".block_swiper_two");
-  
-  swiper1.classList.remove("block_swiper_one_BLOCK");
-  swiper2.classList.add("block_swiper_two_BLOCK");
-});
