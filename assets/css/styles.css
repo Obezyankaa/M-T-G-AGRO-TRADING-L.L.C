@@ -450,12 +450,14 @@ input {
 /*=============== DISCOVER ===============*/
 .discover__card {
   position: relative;
-  width: 200px;
+  width: 170px;
   overflow: var(--img-hidden);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .discover__data {
-  position: absolute;
   bottom: 1.5rem;
   left: 1rem;
 }
@@ -468,6 +470,8 @@ input {
 .discover__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-25);
+  color: var(--title-color);
+  padding-top: 1rem;
 }
 
 .discover__description {
@@ -476,6 +480,8 @@ input {
 }
 
 .discover__img {
+  width: 110px;
+  height: 110px;
   transition: var(--img-transition);
 }
 
