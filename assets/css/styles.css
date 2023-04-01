@@ -793,6 +793,10 @@ input {
   display: none;
 }
 
+.swiper_chixken_nuggets {
+  display: none;
+}
+
 /*=============== EXPERIENCE ===============*/
 .experience__container {
   row-gap: 2.5rem;
