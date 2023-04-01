@@ -161,16 +161,17 @@ themeButton.addEventListener('click', () => {
 })
 
 
-
+// получаем кнопки ( ХАЛЯЛЬ / НЕ ХАЛЯЛЬ )
 const btn1 = document.querySelector(".btn__products");
 const btn2 = document.querySelector(".btn__products_no");
 
+// открывает категорию ( ХАЛЯЛЬ )
 btn1.addEventListener("click", () => {
   const swiper1 = document.querySelector(".block_swiper_one");
   const swiper2 = document.querySelector(".block_swiper_two");
-
+// в зависимость от нажатой кнопки, присваивается тот или иной класс
   swiper2.classList.remove("block_swiper_two_BLOCK");
-    swiper1.classList.add("block_swiper_one_BLOCK");
+  swiper1.classList.add("block_swiper_one_BLOCK");
     
     let swiper = new Swiper(".discover__container", {
       effect: "coverflow",
@@ -185,31 +186,44 @@ btn1.addEventListener("click", () => {
     });
 });
 
+// открывает категорию ( НЕ ХАЛЯЛЬ )
 btn2.addEventListener("click", () => {
   const swiper1 = document.querySelector(".block_swiper_one");
   const swiper2 = document.querySelector(".block_swiper_two");
-
+  
+  // в зависимость от нажатой кнопки, присваивается тот или иной класс
   swiper1.classList.remove("block_swiper_one_BLOCK");
-    swiper2.classList.add("block_swiper_two_BLOCK");
-    let swiper = new Swiper(".discover__container", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      loop: true,
-      spaceBetween: 32,
-      coverflowEffect: {
-        rotate: 0,
-      },
-    });
+  swiper2.classList.add("block_swiper_two_BLOCK");
+
+  let swiper = new Swiper(".discover__container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 32,
+    coverflowEffect: {
+      rotate: 0,
+    },
+  });
 });
 
-
+// получаем иконки категорий на которые мы можем нажать 
 const button_beef = document.querySelector(".button_beef");
 const button_rose_veal = document.querySelector(".button_rose_veal");
+const button_sausage_products = document.querySelector(".button_sausage_products");
 
+
+// иконка BEEF ( говядина )
 button_beef.addEventListener("click", () => {
     const swiper_beef_block = document.querySelector(".swiper_beef_block");
+    const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
+    const swiper_sausage_products = document.querySelector(
+      ".swiper_sausage_products"
+    );
+
+    swiper_sausage_products.style.display = "none";
+    swiper_rose_veal.style.display = "none";
     swiper_beef_block.style.display = 'block';
 
     let swiper = new Swiper(".blog-slider", {
@@ -227,10 +241,15 @@ button_beef.addEventListener("click", () => {
     });
 })
 
+// иконка ROSE_VEAL ( розовая телятина )
 button_rose_veal.addEventListener('click', () => {
     const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
     const swiper_beef_block = document.querySelector(".swiper_beef_block");
+    const swiper_sausage_products = document.querySelector(
+          ".swiper_sausage_products"
+        );
 
+        swiper_sausage_products.style.display = "none";
         swiper_beef_block.style.display = "none";
         swiper_rose_veal.style.display = "block";
 
@@ -247,6 +266,30 @@ button_rose_veal.addEventListener('click', () => {
         clickable: true,
       },
     });
-
-
 })
+
+// иконка SAUSAGE_PRODUCTS ( колбаса )
+button_sausage_products.addEventListener('click', () => {
+    const swiper_sausage_products = document.querySelector(".swiper_sausage_products");
+    const swiper_beef_block = document.querySelector(".swiper_beef_block");
+    const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
+
+     swiper_beef_block.style.display = "none";
+     swiper_rose_veal.style.display = "none";
+     swiper_sausage_products.style.display = "block";
+    
+      let swiper = new Swiper(".blog-slider", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+        mousewheel: {
+          invert: false,
+        },
+        // autoHeight: true,
+        pagination: {
+          el: ".blog-slider__pagination",
+          clickable: true,
+        },
+      });
+})
+

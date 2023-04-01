@@ -789,6 +789,10 @@ input {
   display: none;
 }
 
+.swiper_sausage_products {
+  display: none;
+}
+
 /*=============== EXPERIENCE ===============*/
 .experience__container {
   row-gap: 2.5rem;
