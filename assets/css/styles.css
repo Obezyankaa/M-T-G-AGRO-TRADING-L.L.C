@@ -797,6 +797,9 @@ input {
   display: none;
 }
 
+.swiper_chixken {
+  display: none;
+}
 /*=============== EXPERIENCE ===============*/
 .experience__container {
   row-gap: 2.5rem;
