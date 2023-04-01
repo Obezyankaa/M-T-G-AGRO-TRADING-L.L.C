@@ -204,3 +204,49 @@ btn2.addEventListener("click", () => {
     });
 });
 
+
+const button_beef = document.querySelector(".button_beef");
+const button_rose_veal = document.querySelector(".button_rose_veal");
+
+button_beef.addEventListener("click", () => {
+    const swiper_beef_block = document.querySelector(".swiper_beef_block");
+    swiper_beef_block.style.display = 'block';
+
+    let swiper = new Swiper(".blog-slider", {
+      spaceBetween: 30,
+      effect: "fade",
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: ".blog-slider__pagination",
+        clickable: true,
+      },
+    });
+})
+
+button_rose_veal.addEventListener('click', () => {
+    const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
+    const swiper_beef_block = document.querySelector(".swiper_beef_block");
+
+        swiper_beef_block.style.display = "none";
+        swiper_rose_veal.style.display = "block";
+
+    let swiper = new Swiper(".blog-slider", {
+      spaceBetween: 30,
+      effect: "fade",
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: ".blog-slider__pagination",
+        clickable: true,
+      },
+    });
+
+
+})
