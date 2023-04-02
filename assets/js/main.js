@@ -229,6 +229,7 @@ btn2.addEventListener("click", () => {
 /*==================== КНОПКИ КАТЕГОРИЙ ICON ====================*/
 
 // получаем иконки категорий на которые мы можем нажать
+const button_chixken = document.querySelector(".button_chixken");
 const button_beef = document.querySelector(".button_beef");
 const button_rose_veal = document.querySelector(".button_rose_veal");
 const button_sausage_products = document.querySelector(
@@ -237,7 +238,6 @@ const button_sausage_products = document.querySelector(
 const button_chixken_nuggets = document.querySelector(
   ".button_chixken_nuggets"
 );
-const button_chixken = document.querySelector(".button_chixken");
 
 // иконка BEEF ( говядина )
 button_beef.addEventListener("click", () => {
