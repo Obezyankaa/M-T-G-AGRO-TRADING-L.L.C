@@ -8,21 +8,23 @@
   /*========== Colors ==========*/
   /* Change favorite color to match images */
   /*Green dark 190 - Green 171 - Grren Blue 200*/
-  --hue-color: 190;
+  --hue-color: 10;
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 64%, 22%);
   --first-color-second: hsl(var(--hue-color), 64%, 22%);
   --first-color-alt: hsl(var(--hue-color), 64%, 15%);
-  --title-color: hsl(var(--hue-color), 64%, 18%);
-  --text-color: hsl(var(--hue-color), 24%, 35%);
+  --title-color: hsl(var(--hue-color), 7%, 14%);
+  --text-color: hsl(var(--hue-color), 5%, 23%);
   --text-color-light: hsl(var(--hue-color), 8%, 60%);
   --input-color: hsl(var(--hue-color), 24%, 97%);
-  --body-color: hsl(var(--hue-color), 100%, 99%);
+  --body-color: hsl(var(--hue-color), 0%, 93%);
   --white-color: #FFF;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
-
+  --color-block-products: hsl(var(--hue-color), 7%, 88%);
+  --color-button-categories: hsl(var(--hue-color), 0%, 77%);
+  --color-buttin-categories-hover: hsl(var(--hue-color), 0%, 65%);
   /*========== Font and typography ==========*/
   --body-font: 'Open Sans', sans-serif;
   --title-font: 'Roboto', sans-serif;
@@ -52,7 +54,7 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 
-  /*========== Hover overlay ==========*/
+  /*========== Hover overlay увелиивает фотографию при наведении ==========*/
   --img-transition: .3s;
   --img-hidden: hidden;
   --img-scale: scale(1.1);
@@ -76,9 +78,12 @@ body.dark-theme {
   --title-color: hsl(var(--hue-color), 24%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 29%, 12%);
+  --body-color: hsl(var(--hue-color), 50%, 5%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --color-block-products: hsl(var(--hue-color), 54%, 12%);
+  --color-button-categories: hsl(var(--hue-color), 48%, 22%);
+
 }
 
 /*========== Button Dark/Light ==========*/
@@ -194,6 +199,7 @@ input {
   left: 0;
   z-index: var(--z-fixed);
   background-color: transparent;
+  border-radius: 0 0 1rem 1rem;
 }
 
 /*=============== NAV ===============*/
@@ -379,15 +385,17 @@ input {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: var(--color-button-categories);
   color: var(--white-color);
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
   transition: .3s;
+  font-size: var(--normal-font-size);
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: var(--color-buttin-categories-hover);
+  color: var(--text-color);
 }
 
 .button--flex {
@@ -448,6 +456,9 @@ input {
 }
 
 /*=============== DISCOVER ===============*/
+.discover {
+  background: var(--color-block-products);
+}
 .discover__card {
   position: relative;
   width: 170px;
@@ -523,7 +534,6 @@ input {
 }
 
 .btn__products, .btn__products_no {
-  padding: 5px;
   border-radius: 4px;
   color: var(--text-color);
 }
@@ -783,22 +793,31 @@ input {
 
 .swiper_beef_block {
   display: none;
+  margin-top: 1.3rem;
 }
 
 .swiper_rose_veal {
   display: none;
+  margin-top: 1.3rem;
+
 }
 
 .swiper_sausage_products {
   display: none;
+  margin-top: 1.3rem;
+
 }
 
 .swiper_chixken_nuggets {
   display: none;
+  margin-top: 1.3rem;
+
 }
 
 .swiper_chixken {
   display: none;
+  margin-top: 1.3rem;
+
 }
 /*=============== EXPERIENCE ===============*/
 .experience__container {
@@ -1055,6 +1074,10 @@ input {
   margin-right: var(--mb-1-25);
 }
 
+.form__contact__title {
+  text-align: start;
+}
+
 .footer__subtitle {
   margin-bottom: var(--mb-1);
 }
@@ -1064,6 +1087,7 @@ input {
 }
 
 .footer__link {
+  font-size: var(--normal-font-size);
   color: var(--text-color);
 }
 
@@ -1099,7 +1123,7 @@ input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  background-color: var(--block-light);
+  background: var(--color-block-products);
   box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
   border-radius: 1rem 1rem 0 0 ;
   overflow: hidden;
@@ -1292,7 +1316,7 @@ input {
     color: var(--text-color);
   }
   .section {
-    padding: 7rem 0 2rem;
+    padding: 7rem 0 7rem;
   }
   .home__container {
     height: 100vh;
@@ -1397,7 +1421,7 @@ input {
     bottom: 2rem;
   }
   .discover__title {
-    font-size: var(--h2-font-size);
+    font-size: var(--h3-font-size);
   }
   .experience__content {
     margin: var(--mb-1) 0;
@@ -1422,6 +1446,13 @@ input {
   }
   .place__card, .place__img {
     height: 263px;
+  }
+
+  .geography__text {
+    padding-left: 1rem;
+  }
+  .geography__text ul {
+    line-height: 2;
   }
   .footer__content {
     justify-items: center;

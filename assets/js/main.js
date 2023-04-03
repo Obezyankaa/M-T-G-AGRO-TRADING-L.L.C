@@ -111,11 +111,12 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.home__data, .home__social-link, .home__info,
+  `.section__title, .home__data, .home__social-link, .home__info,
            .experience__data, .experience__overlay,
            .place__card,
            .sponsor__content,
-           .footer__data, .footer__rights`,
+           .footer__data,
+           .footer__rights`,
   {
     origin: "top",
     interval: 100,
@@ -125,7 +126,7 @@ sr.reveal(
 sr.reveal(
   `.about__data, 
            .video__description,
-           .subscribe__description`,
+           .subscribe__description, .geography__img_block, .btn__products`,
   {
     origin: "left",
   }
@@ -134,12 +135,17 @@ sr.reveal(
 sr.reveal(
   `.about__img-overlay, 
            .video__content,
-           .subscribe__form`,
+           .subscribe__form, .geography__text, .btn__products_no`,
   {
     origin: "right",
     interval: 100,
   }
 );
+
+sr.reveal(`.footer, .form__contact__title`, {
+  origin: "bottom",
+  interval: 150,
+});
 
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById("theme-button");
