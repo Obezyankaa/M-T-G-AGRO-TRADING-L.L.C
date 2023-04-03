@@ -25,6 +25,11 @@
   --color-block-products: hsl(var(--hue-color), 7%, 88%);
   --color-button-categories: hsl(var(--hue-color), 0%, 77%);
   --color-buttin-categories-hover: hsl(var(--hue-color), 0%, 65%);
+  --display-map-white: block;
+  --display-map-dark: none;
+
+
+
   /*========== Font and typography ==========*/
   --body-font: 'Open Sans', sans-serif;
   --title-font: 'Roboto', sans-serif;
@@ -83,6 +88,8 @@ body.dark-theme {
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
   --color-block-products: hsl(var(--hue-color), 54%, 12%);
   --color-button-categories: hsl(var(--hue-color), 48%, 22%);
+  --display-map-white: none;
+  --display-map-dark: block;
 
 }
 
@@ -299,6 +306,10 @@ input {
 }
 
 /*=============== HOME ===============*/
+
+.home {
+  height: 100vh;
+}
 .home__img {
   position: absolute;
   top: 0;
@@ -1033,6 +1044,14 @@ input {
   border-radius: 20px;
 }
 
+.geography__img_block {
+  display: var(--display-map-white);
+}
+
+.geography__img_block_dark {
+  display: var(--display-map-dark);
+}
+
 .geography__heading {
   font-family: 'Signature Gon';
   font-weight: 500;
@@ -1043,6 +1062,12 @@ input {
 .geography__text ul li {
   font-size: 1.2rem;
   color: var(--text-color);
+  transition: var(--img-transition);
+
+}
+
+.geography__text ul li:hover {
+  transform: var(--img-scale);
 }
 
 /*=============== FOOTER ===============*/
@@ -1471,7 +1496,7 @@ input {
     margin: 0;
   }
   .home__container, .home__img {
-    height: 640px;
+    height: 100vh;
   }
 }
 

@@ -126,7 +126,9 @@ sr.reveal(
 sr.reveal(
   `.about__data, 
            .video__description,
-           .subscribe__description, .geography__img_block, .btn__products`,
+           .subscribe__description,
+           .geography__container_img,
+           .btn__products`,
   {
     origin: "left",
   }
@@ -144,7 +146,7 @@ sr.reveal(
 
 sr.reveal(`.footer, .form__contact__title`, {
   origin: "bottom",
-  interval: 150,
+  interval: 100,
 });
 
 /*==================== DARK LIGHT THEME ====================*/
