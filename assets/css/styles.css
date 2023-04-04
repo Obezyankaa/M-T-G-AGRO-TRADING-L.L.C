@@ -779,6 +779,20 @@ input {
   .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 5px;
   }
+    .nav__logo {
+    text-align: center;
+  }
+  .nav__logo_img {
+    width: 70%;
+  }
+  .geography__text ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .geography__text ul li{
+    padding-right: 1.2rem;
+  }
 }
 .blog-slider__pagination .swiper-pagination-bullet {
   width: 11px;
@@ -1061,6 +1075,7 @@ input {
 
 .geography__text ul li {
   font-size: 1.2rem;
+  margin-bottom: 1rem;
   color: var(--text-color);
   transition: var(--img-transition);
 

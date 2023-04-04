@@ -144,7 +144,7 @@ sr.reveal(
   }
 );
 
-sr.reveal(`.footer, .form__contact__title`, {
+sr.reveal(`.footer`, {
   origin: "bottom",
   interval: 100,
 });
