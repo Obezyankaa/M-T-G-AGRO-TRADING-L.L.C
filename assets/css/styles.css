@@ -646,8 +646,8 @@ input {
   width: 300px;
   flex-shrink: 0;
   height: 300px;
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
-  box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+  background-image: linear-gradient(147deg, #d2d1d1 0%, #555050 74%);
+  box-shadow: 4px 6px 7px 1px rgb(89 89 89 / 20%);
   border-radius: 20px;
   transform: translateX(-80px);
   overflow: hidden;
@@ -659,7 +659,7 @@ input {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  /* background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); */
   border-radius: 20px;
   opacity: 0.8;
 }
@@ -842,8 +842,34 @@ input {
 .swiper_chixken {
   display: none;
   margin-top: 1.3rem;
-
 }
+
+.swiper_wagyu_beef {
+  display: none;
+  margin-top: 1.3rem;
+}
+
+.mix_breed {
+  display: none;
+  margin-top: 1.3rem;
+}
+
+.swiper_lamb_dorper {
+  display: none;
+  margin-top: 1.3rem;
+}
+
+.swiper_pork {
+  display: none;
+  margin-top: 1.3rem;
+}
+
+.swiper_dumplings {
+  display: none;
+  margin-top: 1.3rem;
+}
+
+
 /*=============== EXPERIENCE ===============*/
 .experience__container {
   row-gap: 2.5rem;
