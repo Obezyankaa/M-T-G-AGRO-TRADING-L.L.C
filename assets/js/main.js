@@ -246,6 +246,11 @@ const button_sausage_products = document.querySelector(
 const button_chixken_nuggets = document.querySelector(
   ".button_chixken_nuggets"
 );
+const button_wagyu_beef = document.querySelector(".button_wagyu_beef");
+const button_mix_breed = document.querySelector(".button_mix_breed");
+const button_lamb_dorper = document.querySelector(".button_lamb_dorper");
+
+
 
 // иконка BEEF ( говядина )
 button_beef.addEventListener("click", () => {
@@ -417,4 +422,11 @@ button_chixken_nuggets.addEventListener("click", () => {
     console.log("CHIXKEN_NUGGETS");
 });
 
+// иконка Wagyu Beef ( бык )
+button_wagyu_beef.addEventListener("click", () => {});
 
+// иконка Mix Breed ( телята )
+button_mix_breed.addEventListener("click", () => {});
+
+// иконка Mix Breed ( овцы )
+button_lamb_dorper.addEventListener("click", () => {});
