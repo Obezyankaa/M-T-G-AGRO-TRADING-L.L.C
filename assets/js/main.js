@@ -116,8 +116,7 @@ sr.reveal(
            .experience__data, .experience__overlay,
            .place__card,
            .sponsor__content,
-           .footer__data,
-           .footer__rights`,
+           .footer__data`,
   {
     origin: "top",
     interval: 100,
@@ -138,7 +137,7 @@ sr.reveal(
 sr.reveal(
   `.about__img-overlay, 
            .video__content,
-           .subscribe__form, .geography__text, .btn__products_no`,
+           .subscribe__form, .geography__text, .btn__products_no, .swiper`,
   {
     origin: "right",
     interval: 100,
@@ -691,3 +690,18 @@ button_dumplings.addEventListener("click", () => {
   });
   console.log("swiper_wagyu_beef");
 });
+
+
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });

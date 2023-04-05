@@ -131,11 +131,12 @@
                 </div>
 
                 <div class="discover__container container swiper-container block_swiper_one ">
-                    <swiper-container class="mySwiper" slides-per-view="3" centered-slides="true" space-between="30" pagination="false" navigation="true">
-                        
-                        <!--==================== DISCOVER 1 ====================-->
-                        <swiper-slide>
-                              <div class="discover__card swiper-slide button_beef">
+
+                     <!-- Swiper -->
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                             
+                        <div class="discover__card swiper-slide button_beef">
                             <img src="./assets/img/1.png" alt="" class="discover__img">
 
                             <div class="discover__data">
@@ -143,74 +144,63 @@
                                 <!-- <span class="discover__description">24 tours available</span> -->
                             </div>
                         </div>
-                        </swiper-slide>
 
-                        <!--==================== DISCOVER 2 ====================-->
-                        <swiper-slide>
-                            <div class="discover__card swiper-slide button_rose_veal">
-                            <img src="https://cdn.shopify.com/s/files/1/0591/0629/5985/products/11.png?v=1631022303" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h3 class="discover__title">Rose Veal</h3>
-                                <!-- <span class="discover__description">15 tours available</span> -->
-                            </div>
-                        </div>
-                        </swiper-slide>
-                        
-                        <!--==================== DISCOVER 3 ====================-->
-                        <swiper-slide>
-                             <div class="discover__card swiper-slide button_chixken_nuggets">
+                        <div class="discover__card swiper-slide button_rose_veal">
+                           <img src="https://cdn.shopify.com/s/files/1/0591/0629/5985/products/11.png?v=1631022303" alt="" class="discover__img">
+                           <div class="discover__data">
+                               <h3 class="discover__title">Rose Veal</h3>
+                               <!-- <span class="discover__description">15 tours available</span> -->
+                           </div>
+                       </div>
+
+                        <div class="discover__card swiper-slide button_chixken_nuggets">
                             <img src="https://www.livveganstrong.com/wp-content/uploads/2022/04/Close-Up-Tofu-Nuggets.jpg" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h3 class="discover__title">Chiсken Nuggets</h3>
                                 <!-- <span class="discover__description">32 tours available</span> -->
                             </div>
                         </div>
-                        </swiper-slide>
 
-                        <!--==================== DISCOVER 4 ====================-->
-                        <swiper-slide>
-                            <div class="discover__card swiper-slide button_chixken">
+                        <div class="discover__card swiper-slide button_chixken">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC8AG3Sd-LLCj437dtOzOkfbopHMwRfwWPVw&usqp=CAU" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h3 class="discover__title">Сhicken</h3>
                                <!-- <span class="discover__description">32 tours available</span> -->
                             </div>
                         </div>
-                        </swiper-slide>
 
-                        <!--==================== DISCOVER 5 ====================-->
-                        <swiper-slide>
-                             <div class="discover__card swiper-slide button_wagyu_beef">
+                        <div class="discover__card swiper-slide button_wagyu_beef">
                             <img src="https://www.wyndfordwagyu.com/wp-content/uploads/2022/06/wyndford-wagyu-sirloin-steak.jpg" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h3 class="discover__title">Wagyu Beef</h3>
                                <!-- <span class="discover__description">32 tours available</span> -->
                             </div>
                         </div>
-                        </swiper-slide>
 
-                        <!--==================== DISCOVER 6 ====================-->
-                        <swiper-slide>
-                              <div class="discover__card swiper-slide button_mix_breed">
+                        <div class="discover__card swiper-slide button_mix_breed">
                             <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2020/01/wagyu-beef.jpg?quality=82&strip=1" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h3 class="discover__title">Mix Breed</h3>
                                <!-- <span class="discover__description">32 tours available</span> -->
                             </div>
                         </div>
-                        </swiper-slide>
 
-                        <!--==================== DISCOVER 7 ====================-->
-                        <swiper-slide>
-                            <div class="discover__card swiper-slide button_lamb_dorper">
+                        <div class="discover__card swiper-slide button_lamb_dorper">
                             <img src="https://www.keziefoods.co.uk/wp-content/uploads/2021/03/Wagyu-Beef-Rump-Steaks-250g-2-in-a-pack.jpg" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h3 class="discover__title">Lamb Dorper</h3>
                                <!-- <span class="discover__description">32 tours available</span> -->
                             </div>
                         </div>
-                        </swiper-slide>
-                    </swiper-container>
+
+
+
+
+                    </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
                 <!--------------- НЕ ХАЛЯЛЬ категории --------------->
                  <div class="discover__container container swiper-container block_swiper_two">
@@ -787,13 +777,20 @@ In our catalog we have sausages with milk, eggs, spicy nutmeg. And all of this w
                     </div>
                 </section>
         </footer>
+
         
          <!--========== SCROLL UP ==========-->
         <a href="#" class="scrollup" id="scroll-up">
             <i class="ri-arrow-up-line scrollup__icon"></i>
-        </a>       
-                <script src="assets/js/swiper-bundle.min.js"></script>
- 
+        </a>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+            const swiper = new Swiper(...)
+        </script>
+        
         <!--=============== SCROLL REVEAL===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
         
