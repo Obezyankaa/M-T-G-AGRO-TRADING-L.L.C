@@ -112,7 +112,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.section__title, .home__data, .home__social-link, .home__info,
+  `.section__title, .test1, .home__social-link, .home__info,
            .experience__data, .experience__overlay,
            .place__card,
            .sponsor__content,
@@ -124,7 +124,8 @@ sr.reveal(
 );
 
 sr.reveal(
-  `.about__data, 
+  `.about__data,
+  .test2, 
            .video__description,
            .subscribe__description,
            .geography__container_img,
@@ -144,7 +145,7 @@ sr.reveal(
   }
 );
 
-sr.reveal(`.footer`, {
+sr.reveal(`.footer, .test3`, {
   origin: "bottom",
   interval: 100,
 });
@@ -705,3 +706,10 @@ button_dumplings.addEventListener("click", () => {
         prevEl: ".swiper-button-prev",
       }
     });
+
+
+const scroll_down = document.querySelector(".scroll-down");
+scroll_down.style.display = "none";
+setTimeout(() => {
+scroll_down.style.display = "block";
+},3000)
