@@ -552,6 +552,10 @@ input {
   color: var(--text-color);
 }
 
+.test {
+  display: flex;
+  padding: 6rem 4rem;
+}
 
 .blog-slider {
   width: 95%;
