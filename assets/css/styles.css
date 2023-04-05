@@ -1451,14 +1451,18 @@ input {
     bottom: 3rem;
   }
 
+  .home__data-title {
+      padding-top: 130px;
+    }
+
   .test1, .test3 {
     display: block;
-    font-size: 7rem;
+    font-size: 6rem;
   }
 
   .test2 {
     display: block;
-    font-size: 7rem;
+    font-size: 6rem;
     padding: 3rem 0;
   }
 
