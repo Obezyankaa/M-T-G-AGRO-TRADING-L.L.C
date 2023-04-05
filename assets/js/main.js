@@ -1,3 +1,4 @@
+
 /*==================== SHOW MENU ====================*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -196,8 +197,8 @@ btn1.addEventListener("click", () => {
   const swiper1 = document.querySelector(".block_swiper_one");
   const swiper2 = document.querySelector(".block_swiper_two");
   // в зависимость от нажатой кнопки, присваивается тот или иной класс
-  swiper2.classList.remove("block_swiper_two_BLOCK");
-  swiper1.classList.add("block_swiper_one_BLOCK");
+  swiper2.style.display = "none";
+  swiper1.style.display = "block";
 
   let swiper = new Swiper(".discover__container", {
     effect: "coverflow",
@@ -218,8 +219,8 @@ btn2.addEventListener("click", () => {
   const swiper2 = document.querySelector(".block_swiper_two");
 
   // в зависимость от нажатой кнопки, присваивается тот или иной класс
-  swiper1.classList.remove("block_swiper_one_BLOCK");
-  swiper2.classList.add("block_swiper_two_BLOCK");
+  swiper1.style.display = "none";
+  swiper2.style.display = "block";
 
   let swiper = new Swiper(".discover__container", {
     effect: "coverflow",
@@ -254,7 +255,7 @@ const button_dumplings = document.querySelector(".button_dumplings");
 
 
 // иконка BEEF ( говядина )
-button_beef.addEventListener("click", () => {
+setTimeout(() => {
   const swiper_dumplings = document.querySelector(".swiper_dumplings");
   const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
   const swiper_mix_breed = document.querySelector(".swiper_mix_breed");
@@ -293,7 +294,7 @@ button_beef.addEventListener("click", () => {
     },
   });
     console.log("BEEF");
-});
+},1000);
 
 // иконка ROSE_VEAL ( розовая телятина )
 button_rose_veal.addEventListener("click", () => {
