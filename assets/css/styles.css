@@ -544,8 +544,8 @@ input {
 }
 
 .discover__img {
-  width: 110px;
-  height: 110px;
+  width: 170px;
+  height: 170px;
   transition: var(--img-transition);
   border-radius: 50%;
 }
@@ -596,6 +596,7 @@ input {
 
 .test {
   display: flex;
+  justify-content: space-around;
   padding: 6rem 4rem;
 }
 
@@ -622,7 +623,7 @@ input {
   .blog-slider {
     min-height: 500px;
     height: auto;
-    margin: 180px auto;
+    margin: 60px auto;
   }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
@@ -1292,10 +1293,60 @@ input {
      gap: 1rem;
      /* margin-top: 20rem !important ; */
     }
+
+    .home__data-title {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .test1 {
+      font-weight: 600;
+      font-size: 5rem;
+    }
+
+    .test2,.test3 {
+      font-size: 3rem;
+    }
+    .swiper-button-next,.swiper-button-prev {
+      display: none;
+    }
+
+    .swiper_beef_block,.swiper_rose_veal,.swiper_chixken_nuggets,.swiper_chixken,.swiper_wagyu_beef,.swiper_mix_breed,.swiper_lamb_dorper,.swiper_pork,.swiper_dumplings,.swiper_sausage_products {
+      margin-top: 5.3rem;
+    }
+
+    .discover {
+      position: relative;
+    }
+
+    .swip_icon {
+      position: absolute;
+      top: 340px;
+      left: 167px;
+      z-index: 1;
+    }
+
+    /* .blog-slider__img {
+      height: 30%;
+    } */
+
+    .discover__img {
+      width: 100px;
+      height: 100px;
+    }
+
     .geography__container {
       flex-direction: column;
       padding-bottom: 25px;
     }
+}
+
+.body_one {
+  background-color: #e9414c;
+}
+
+.swip_icon {
+  display: none;
 }
 
 /*========== SCROLL UP ==========*/
@@ -1547,7 +1598,7 @@ input {
     width: 237px;
   }
   .discover__container {
-    width: 820px;
+    /* width: 820px; */
   }
   .discover__data {
     left: 1.5rem;

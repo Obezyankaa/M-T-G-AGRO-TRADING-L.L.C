@@ -1,4 +1,3 @@
-
 /*==================== SHOW MENU ====================*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -38,6 +37,30 @@ function scrollHeader() {
   else header.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
+
+// const screenWidth = window.screen.width;
+const screenWidth = window.screen.width;
+
+console.log(screenWidth);
+
+if (screenWidth < 600) {
+  function scrollFingerAnimation() {
+    const swip_icon = document.querySelector(".swip_icon");
+    // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
+    if (this.scrollY >= 1440 && this.scrollY <= 1470) {
+      setTimeout(() => {
+        swip_icon.style.display = "block";
+        setTimeout(() => {
+          swip_icon.style.display = "none";
+        }, 4000);
+      }, 7000);
+    }
+
+    // else home.classList.remove("scroll-header");
+    console.log(this.scrollY);
+  }
+window.addEventListener("scroll", scrollFingerAnimation);
+}
 
 /*==================== VIDEO ====================*/
 // const videoFile = document.getElementById('video-file'),
@@ -125,7 +148,7 @@ sr.reveal(
 
 sr.reveal(
   `.about__data,
-  .test2, 
+  .test2, .test3,
            .video__description,
            .subscribe__description,
            .geography__container_img,
@@ -145,7 +168,7 @@ sr.reveal(
   }
 );
 
-sr.reveal(`.footer, .test3`, {
+sr.reveal(`.footer`, {
   origin: "bottom",
   interval: 100,
 });
@@ -253,8 +276,6 @@ const button_lamb_dorper = document.querySelector(".button_lamb_dorper");
 const button_pork = document.querySelector(".button_pork");
 const button_dumplings = document.querySelector(".button_dumplings");
 
-
-// иконка BEEF ( говядина )
 setTimeout(() => {
   const swiper_dumplings = document.querySelector(".swiper_dumplings");
   const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
@@ -293,8 +314,50 @@ setTimeout(() => {
       clickable: true,
     },
   });
-    console.log("BEEF");
-},1000);
+  console.log("BEEF");
+}, 1000);
+
+// иконка BEEF ( говядина )
+button_beef.addEventListener("click", () => {
+  const swiper_dumplings = document.querySelector(".swiper_dumplings");
+  const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
+  const swiper_mix_breed = document.querySelector(".swiper_mix_breed");
+  const swiper_wagyu_beef = document.querySelector(".swiper_wagyu_beef");
+  const swiper_beef_block = document.querySelector(".swiper_beef_block");
+  const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
+  const swiper_sausage_products = document.querySelector(
+    ".swiper_sausage_products"
+  );
+  const swiper_chixken_nuggets = document.querySelector(
+    ".swiper_chixken_nuggets"
+  );
+  const swiper_chixken = document.querySelector(".swiper_chixken");
+
+  swiper_dumplings.style.display = "none";
+  swiper_lamb_dorper.style.display = "none";
+  swiper_mix_breed.style.display = "none";
+  swiper_wagyu_beef.style.display = "none";
+  swiper_sausage_products.style.display = "none";
+  swiper_rose_veal.style.display = "none";
+  swiper_chixken_nuggets.style.display = "none";
+  swiper_chixken.style.display = "none";
+  swiper_beef_block.style.display = "block";
+
+  let swiper = new Swiper(".blog-slider", {
+    spaceBetween: 30,
+    effect: "fade",
+    loop: true,
+    mousewheel: {
+      invert: false,
+    },
+    // autoHeight: true,
+    pagination: {
+      el: ".blog-slider__pagination",
+      clickable: true,
+    },
+  });
+  console.log("BEEF");
+});
 
 // иконка ROSE_VEAL ( розовая телятина )
 button_rose_veal.addEventListener("click", () => {
@@ -337,7 +400,7 @@ button_rose_veal.addEventListener("click", () => {
       clickable: true,
     },
   });
-    console.log("ROSE_VEAL");
+  console.log("ROSE_VEAL");
 });
 
 // иконка CHIXKEN (курица )
@@ -358,7 +421,7 @@ button_chixken.addEventListener("click", () => {
   const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
 
   swiper_dumplings.style.display = "none";
-  swiper_pork.style.display = "none"
+  swiper_pork.style.display = "none";
   swiper_lamb_dorper.style.display = "none";
   swiper_mix_breed.style.display = "none";
   swiper_wagyu_beef.style.display = "none";
@@ -381,7 +444,7 @@ button_chixken.addEventListener("click", () => {
       clickable: true,
     },
   });
-    console.log("button_chixken");
+  console.log("button_chixken");
 });
 
 // иконка SAUSAGE_PRODUCTS ( колбаса )
@@ -425,7 +488,7 @@ button_sausage_products.addEventListener("click", () => {
       clickable: true,
     },
   });
-    console.log("SAUSAGE_PRODUCTS");
+  console.log("SAUSAGE_PRODUCTS");
 });
 
 // иконка CHIXKEN_NUGGETS (нагетцы )
@@ -444,7 +507,7 @@ button_chixken_nuggets.addEventListener("click", () => {
   const swiper_beef_block = document.querySelector(".swiper_beef_block");
   const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
   const swiper_wagyu_beef = document.querySelector(".swiper_wagyu_beef");
-  
+
   swiper_dumplings.style.display = "none";
   swiper_pork.style.display = "none";
   swiper_lamb_dorper.style.display = "none";
@@ -469,7 +532,7 @@ button_chixken_nuggets.addEventListener("click", () => {
       clickable: true,
     },
   });
-    console.log("CHIXKEN_NUGGETS");
+  console.log("CHIXKEN_NUGGETS");
 });
 
 // иконка Wagyu Beef ( бык )
@@ -518,46 +581,46 @@ button_wagyu_beef.addEventListener("click", () => {
 
 // иконка Mix Breed ( телята )
 button_mix_breed.addEventListener("click", () => {
-    const swiper_dumplings = document.querySelector(".swiper_dumplings");
-    const swiper_pork = document.querySelector(".swiper_pork");  
-    const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
-    const swiper_mix_breed = document.querySelector(".swiper_mix_breed");
-    const swiper_wagyu_beef = document.querySelector(".swiper_wagyu_beef");
-    const swiper_chixken = document.querySelector(".swiper_chixken");
-    const swiper_chixken_nuggets = document.querySelector(
-      ".swiper_chixken_nuggets"
-    );
-    const swiper_sausage_products = document.querySelector(
-      ".swiper_sausage_products"
-    );
-    const swiper_beef_block = document.querySelector(".swiper_beef_block");
-    const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
+  const swiper_dumplings = document.querySelector(".swiper_dumplings");
+  const swiper_pork = document.querySelector(".swiper_pork");
+  const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
+  const swiper_mix_breed = document.querySelector(".swiper_mix_breed");
+  const swiper_wagyu_beef = document.querySelector(".swiper_wagyu_beef");
+  const swiper_chixken = document.querySelector(".swiper_chixken");
+  const swiper_chixken_nuggets = document.querySelector(
+    ".swiper_chixken_nuggets"
+  );
+  const swiper_sausage_products = document.querySelector(
+    ".swiper_sausage_products"
+  );
+  const swiper_beef_block = document.querySelector(".swiper_beef_block");
+  const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
 
-    swiper_dumplings.style.display = "none";
-    swiper_pork.style.display = "none";
-    swiper_lamb_dorper.style.display = "none";
-    swiper_sausage_products.style.display = "none";
-    swiper_beef_block.style.display = "none";
-    swiper_rose_veal.style.display = "none";
-    swiper_chixken.style.display = "none";
-    swiper_chixken_nuggets.style.display = "none";
-    swiper_wagyu_beef.style.display = "none";
-    swiper_mix_breed.style.display = "block";
+  swiper_dumplings.style.display = "none";
+  swiper_pork.style.display = "none";
+  swiper_lamb_dorper.style.display = "none";
+  swiper_sausage_products.style.display = "none";
+  swiper_beef_block.style.display = "none";
+  swiper_rose_veal.style.display = "none";
+  swiper_chixken.style.display = "none";
+  swiper_chixken_nuggets.style.display = "none";
+  swiper_wagyu_beef.style.display = "none";
+  swiper_mix_breed.style.display = "block";
 
-    let swiper = new Swiper(".blog-slider", {
-      spaceBetween: 30,
-      effect: "fade",
-      loop: true,
-      mousewheel: {
-        invert: false,
-      },
-      // autoHeight: true,
-      pagination: {
-        el: ".blog-slider__pagination",
-        clickable: true,
-      },
-    });
-    console.log("swiper_wagyu_beef");
+  let swiper = new Swiper(".blog-slider", {
+    spaceBetween: 30,
+    effect: "fade",
+    loop: true,
+    mousewheel: {
+      invert: false,
+    },
+    // autoHeight: true,
+    pagination: {
+      el: ".blog-slider__pagination",
+      clickable: true,
+    },
+  });
+  console.log("swiper_wagyu_beef");
 });
 
 // иконка Lamb Dorper ( овцы )
@@ -576,7 +639,7 @@ button_lamb_dorper.addEventListener("click", () => {
   );
   const swiper_beef_block = document.querySelector(".swiper_beef_block");
   const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
-  
+
   swiper_dumplings.style.display = "none";
   swiper_pork.style.display = "none";
   swiper_sausage_products.style.display = "none";
@@ -630,7 +693,7 @@ button_pork.addEventListener("click", () => {
   swiper_wagyu_beef.style.display = "none";
   swiper_mix_breed.style.display = "none";
   swiper_lamb_dorper.style.display = "none";
-   swiper_pork.style.display = "block";
+  swiper_pork.style.display = "block";
 
   let swiper = new Swiper(".blog-slider", {
     spaceBetween: 30,
@@ -692,24 +755,27 @@ button_dumplings.addEventListener("click", () => {
   console.log("swiper_wagyu_beef");
 });
 
-
-    const swiper = new Swiper(".swiper", {
-      slidesPerView: 3,
-      centeredSlides: true,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      }
-    });
-
+const swiper = new Swiper(".swiper", {
+  // rewind: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  speed: 400,
+  initialSlide: 0,
+  autoHeight: false,
+  direction: "horizontal",
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 const scroll_down = document.querySelector(".scroll-down");
 scroll_down.style.display = "none";
 setTimeout(() => {
-scroll_down.style.display = "block";
-},3000)
+  scroll_down.style.display = "block";
+}, 3000);
