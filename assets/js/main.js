@@ -47,7 +47,7 @@ if (screenWidth < 600) {
   function scrollFingerAnimation() {
     const swip_icon = document.querySelector(".swip_icon");
     // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
-    if (this.scrollY >= 1440 && this.scrollY <= 1470) {
+    if (this.scrollY >= 1340 && this.scrollY <= 1350) {
       setTimeout(() => {
         swip_icon.style.display = "block";
         setTimeout(() => {
