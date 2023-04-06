@@ -1,3 +1,12 @@
+// var isResizeble = false;
+
+// if (!isResizeble) {
+//   // Ваша ф-ция которая что то делает, отработает 1 раз и все
+//   console.log(123);
+
+//   isRezeble = true;
+// }
+
 /*==================== SHOW MENU ====================*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -59,7 +68,7 @@ if (screenWidth < 600) {
     // else home.classList.remove("scroll-header");
     console.log(this.scrollY);
   }
-window.addEventListener("scroll", scrollFingerAnimation);
+  window.addEventListener("scroll", scrollFingerAnimation);
 }
 
 /*==================== VIDEO ====================*/
@@ -779,3 +788,8 @@ scroll_down.style.display = "none";
 setTimeout(() => {
   scroll_down.style.display = "block";
 }, 3000);
+
+
+const block_item = document.querySelector(".block_item");
+
+block_item.addEventListener("click", () => {});
