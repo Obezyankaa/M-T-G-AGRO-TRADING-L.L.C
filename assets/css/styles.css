@@ -1321,8 +1321,9 @@ input {
 
     .swip_icon {
       position: absolute;
-      top: 340px;
-      left: 167px;
+      width: 70px;
+      top: 350px;
+      left: 180px;
       z-index: 1;
     }
 

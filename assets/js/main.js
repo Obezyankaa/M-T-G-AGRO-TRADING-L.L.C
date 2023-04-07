@@ -59,10 +59,16 @@ if (screenWidth < 600) {
     if (this.scrollY >= 1340 && this.scrollY <= 1350) {
       setTimeout(() => {
         swip_icon.style.display = "block";
+
+         const tl = new TimelineMax({ repeat: 2 });
+
+         tl.to(swip_icon, 1, { x: -40 })
+           .to(swip_icon, 1, { x: 50 })
+           .to(swip_icon, 1, { x: 0 });
         setTimeout(() => {
           swip_icon.style.display = "none";
-        }, 4000);
-      }, 7000);
+        }, 1111000);
+      }, 0);
     }
 
     // else home.classList.remove("scroll-header");
