@@ -67,8 +67,8 @@ if (screenWidth < 600) {
            .to(swip_icon, 1, { x: 0 });
         setTimeout(() => {
           swip_icon.style.display = "none";
-        }, 1111000);
-      }, 0);
+        }, 10000);
+      }, 7000);
     }
 
     // else home.classList.remove("scroll-header");
