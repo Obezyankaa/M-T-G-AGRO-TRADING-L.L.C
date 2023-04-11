@@ -1374,6 +1374,10 @@ input {
       flex-direction: column;
       padding-bottom: 25px;
     }
+
+    .geography__text {
+      margin-top: 2rem;
+    }
 }
 
 .body_one {
@@ -1667,9 +1671,13 @@ input {
   .place__card, .place__img {
     height: 263px;
   }
-
+  .geography__text ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .geography__text {
-    padding-left: 1rem;
+    padding-left: 3rem;
   }
   .geography__text ul {
     line-height: 2;
