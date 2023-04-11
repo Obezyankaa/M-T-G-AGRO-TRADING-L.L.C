@@ -1164,6 +1164,9 @@ input {
   display: var(--display-map-dark);
 }
 
+.geography__img_block img, .geography__img_block_dark img {
+  border-radius: 1rem;
+}
 .geography__heading {
   font-family: 'Signature Gon';
   font-weight: 500;
@@ -1321,11 +1324,11 @@ input {
 
     .test1 {
       font-weight: 600;
-      font-size: 5rem;
+      font-size: 3rem;
     }
 
     .test2,.test3 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     .swiper-button-next,.swiper-button-prev {
       display: none;
@@ -1557,6 +1560,7 @@ input {
     margin-bottom: var(--mb-1-5);
   }
   .about__description {
+    font-size: 1.3rem;
     margin-bottom: var(--mb-2);
   }
   .discover__container {
