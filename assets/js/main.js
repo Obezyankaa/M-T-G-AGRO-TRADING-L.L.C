@@ -163,6 +163,7 @@ sr.reveal(
 
 sr.reveal(
   `.about__data,
+  .about__title_line,
   .test2, .test3,
            .video__description,
            .subscribe__description,
