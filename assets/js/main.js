@@ -291,8 +291,14 @@ const button_mix_breed = document.querySelector(".button_mix_breed");
 const button_lamb_dorper = document.querySelector(".button_lamb_dorper");
 const button_pork = document.querySelector(".button_pork");
 const button_dumplings = document.querySelector(".button_dumplings");
+const button_dumplings_NO_halal = document.querySelector(
+  ".button_dumplings_NO_halal"
+);
 
 setTimeout(() => {
+  const swiper_dumplings_NO_halal = document.querySelector(
+    ".swiper_dumplings_NO_halal"
+  );
   const swiper_dumplings = document.querySelector(".swiper_dumplings");
   const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
   const swiper_mix_breed = document.querySelector(".swiper_mix_breed");
@@ -307,6 +313,7 @@ setTimeout(() => {
   );
   const swiper_chixken = document.querySelector(".swiper_chixken");
 
+  swiper_dumplings_NO_halal.style.display = "none";
   swiper_dumplings.style.display = "none";
   swiper_lamb_dorper.style.display = "none";
   swiper_mix_breed.style.display = "none";
@@ -335,6 +342,9 @@ setTimeout(() => {
 
 // иконка BEEF ( говядина )
 button_beef.addEventListener("click", () => {
+  const swiper_dumplings_NO_halal = document.querySelector(
+    ".swiper_dumplings_NO_halal"
+  );
   const swiper_dumplings = document.querySelector(".swiper_dumplings");
   const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
   const swiper_mix_breed = document.querySelector(".swiper_mix_breed");
@@ -349,6 +359,7 @@ button_beef.addEventListener("click", () => {
   );
   const swiper_chixken = document.querySelector(".swiper_chixken");
 
+  swiper_dumplings_NO_halal.style.display = "none";
   swiper_dumplings.style.display = "none";
   swiper_lamb_dorper.style.display = "none";
   swiper_mix_breed.style.display = "none";
@@ -377,6 +388,9 @@ button_beef.addEventListener("click", () => {
 
 // иконка ROSE_VEAL ( розовая телятина )
 button_rose_veal.addEventListener("click", () => {
+  const swiper_dumplings_NO_halal = document.querySelector(
+    ".swiper_dumplings_NO_halal"
+  );
   const swiper_dumplings = document.querySelector(".swiper_dumplings");
   const swiper_pork = document.querySelector(".swiper_pork");
   const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
@@ -392,6 +406,7 @@ button_rose_veal.addEventListener("click", () => {
   );
   const swiper_chixken = document.querySelector(".swiper_chixken");
 
+  swiper_dumplings_NO_halal.style.display = "none";
   swiper_dumplings.style.display = "none";
   swiper_pork.style.display = "none";
   swiper_lamb_dorper.style.display = "none";
@@ -421,6 +436,9 @@ button_rose_veal.addEventListener("click", () => {
 
 // иконка CHIXKEN (курица )
 button_chixken.addEventListener("click", () => {
+  const swiper_dumplings_NO_halal = document.querySelector(
+    ".swiper_dumplings_NO_halal"
+  );
   const swiper_dumplings = document.querySelector(".swiper_dumplings");
   const swiper_pork = document.querySelector(".swiper_pork");
   const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
@@ -436,6 +454,7 @@ button_chixken.addEventListener("click", () => {
   const swiper_beef_block = document.querySelector(".swiper_beef_block");
   const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
 
+  swiper_dumplings_NO_halal.display.style = "none";
   swiper_dumplings.style.display = "none";
   swiper_pork.style.display = "none";
   swiper_lamb_dorper.style.display = "none";
@@ -465,6 +484,9 @@ button_chixken.addEventListener("click", () => {
 
 // иконка SAUSAGE_PRODUCTS ( колбаса )
 button_sausage_products.addEventListener("click", () => {
+  const swiper_dumplings_NO_halal = document.querySelector(
+    ".swiper_dumplings_NO_halal"
+  );
   const swiper_dumplings = document.querySelector(".swiper_dumplings");
   const swiper_pork = document.querySelector(".swiper_pork");
   const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
@@ -480,6 +502,7 @@ button_sausage_products.addEventListener("click", () => {
   );
   const swiper_chixken = document.querySelector(".swiper_chixken");
 
+  swiper_dumplings_NO_halal.style.display = "none";
   swiper_dumplings.style.display = "none";
   swiper_pork.style.display = "none";
   swiper_lamb_dorper.style.display = "none";
@@ -509,6 +532,9 @@ button_sausage_products.addEventListener("click", () => {
 
 // иконка CHIXKEN_NUGGETS (нагетцы )
 button_chixken_nuggets.addEventListener("click", () => {
+  const swiper_dumplings_NO_halal = document.querySelector(
+    ".swiper_dumplings_NO_halal"
+  );
   const swiper_dumplings = document.querySelector(".swiper_dumplings");
   const swiper_pork = document.querySelector(".swiper_pork");
   const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
@@ -524,6 +550,7 @@ button_chixken_nuggets.addEventListener("click", () => {
   const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
   const swiper_wagyu_beef = document.querySelector(".swiper_wagyu_beef");
 
+  swiper_dumplings_NO_halal.style.display = "none";
   swiper_dumplings.style.display = "none";
   swiper_pork.style.display = "none";
   swiper_lamb_dorper.style.display = "none";
@@ -553,6 +580,9 @@ button_chixken_nuggets.addEventListener("click", () => {
 
 // иконка Wagyu Beef ( бык )
 button_wagyu_beef.addEventListener("click", () => {
+  const swiper_dumplings_NO_halal = document.querySelector(
+    ".swiper_dumplings_NO_halal"
+  );
   const swiper_dumplings = document.querySelector(".swiper_dumplings");
   const swiper_pork = document.querySelector(".swiper_pork");
   const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
@@ -568,6 +598,7 @@ button_wagyu_beef.addEventListener("click", () => {
   const swiper_beef_block = document.querySelector(".swiper_beef_block");
   const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
 
+  swiper_dumplings_NO_halal.style.display = "none";
   swiper_dumplings.style.display = " none";
   swiper_pork.style.display = "none";
   swiper_lamb_dorper.style.display = "none";
@@ -597,6 +628,9 @@ button_wagyu_beef.addEventListener("click", () => {
 
 // иконка Mix Breed ( телята )
 button_mix_breed.addEventListener("click", () => {
+  const swiper_dumplings_NO_halal = document.querySelector(
+    ".swiper_dumplings_NO_halal"
+  );
   const swiper_dumplings = document.querySelector(".swiper_dumplings");
   const swiper_pork = document.querySelector(".swiper_pork");
   const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
@@ -612,6 +646,7 @@ button_mix_breed.addEventListener("click", () => {
   const swiper_beef_block = document.querySelector(".swiper_beef_block");
   const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
 
+  swiper_dumplings_NO_halal.style.display = "none";
   swiper_dumplings.style.display = "none";
   swiper_pork.style.display = "none";
   swiper_lamb_dorper.style.display = "none";
@@ -641,6 +676,9 @@ button_mix_breed.addEventListener("click", () => {
 
 // иконка Lamb Dorper ( овцы )
 button_lamb_dorper.addEventListener("click", () => {
+  const swiper_dumplings_NO_halal = document.querySelector(
+    ".swiper_dumplings_NO_halal"
+  );
   const swiper_dumplings = document.querySelector(".swiper_dumplings");
   const swiper_pork = document.querySelector(".swiper_pork");
   const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
@@ -656,6 +694,7 @@ button_lamb_dorper.addEventListener("click", () => {
   const swiper_beef_block = document.querySelector(".swiper_beef_block");
   const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
 
+  swiper_dumplings_NO_halal.style.display = "none";
   swiper_dumplings.style.display = "none";
   swiper_pork.style.display = "none";
   swiper_sausage_products.style.display = "none";
@@ -685,6 +724,9 @@ button_lamb_dorper.addEventListener("click", () => {
 
 // иконка Pork ( свинина )
 button_pork.addEventListener("click", () => {
+  const swiper_dumplings_NO_halal = document.querySelector(
+    ".swiper_dumplings_NO_halal"
+  );
   const swiper_dumplings = document.querySelector(".swiper_dumplings");
   const swiper_pork = document.querySelector(".swiper_pork");
   const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
@@ -700,6 +742,7 @@ button_pork.addEventListener("click", () => {
   const swiper_beef_block = document.querySelector(".swiper_beef_block");
   const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
 
+  swiper_dumplings_NO_halal.style.display = "none";
   swiper_dumplings.style.display = "none";
   swiper_sausage_products.style.display = "none";
   swiper_beef_block.style.display = "none";
@@ -729,6 +772,9 @@ button_pork.addEventListener("click", () => {
 
 // иконка dumplings ( пельмени )
 button_dumplings.addEventListener("click", () => {
+  const swiper_dumplings_NO_halal = document.querySelector(
+    ".swiper_dumplings_NO_halal"
+  );
   const swiper_dumplings = document.querySelector(".swiper_dumplings");
   const swiper_pork = document.querySelector(".swiper_pork");
   const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
@@ -753,6 +799,7 @@ button_dumplings.addEventListener("click", () => {
   swiper_mix_breed.style.display = "none";
   swiper_lamb_dorper.style.display = "none";
   swiper_pork.style.display = "none";
+  swiper_dumplings_NO_halal.style.display = "none";
   swiper_dumplings.style.display = "block";
 
   let swiper = new Swiper(".blog-slider", {
@@ -770,6 +817,53 @@ button_dumplings.addEventListener("click", () => {
   });
   console.log("swiper_wagyu_beef");
 });
+
+button_dumplings_NO_halal.addEventListener("click", () => {
+  const swiper_dumplings_NO_halal = document.querySelector(
+    ".swiper_dumplings_NO_halal"
+  );
+  const swiper_dumplings = document.querySelector(".swiper_dumplings");
+  const swiper_pork = document.querySelector(".swiper_pork");
+  const swiper_lamb_dorper = document.querySelector(".swiper_lamb_dorper");
+  const swiper_mix_breed = document.querySelector(".swiper_mix_breed");
+  const swiper_wagyu_beef = document.querySelector(".swiper_wagyu_beef");
+  const swiper_chixken = document.querySelector(".swiper_chixken");
+  const swiper_chixken_nuggets = document.querySelector(
+    ".swiper_chixken_nuggets"
+  );
+  const swiper_sausage_products = document.querySelector(
+    ".swiper_sausage_products"
+  );
+  const swiper_beef_block = document.querySelector(".swiper_beef_block");
+  const swiper_rose_veal = document.querySelector(".swiper_rose_veal");
+
+  swiper_sausage_products.style.display = "none";
+  swiper_beef_block.style.display = "none";
+  swiper_rose_veal.style.display = "none";
+  swiper_chixken.style.display = "none";
+  swiper_chixken_nuggets.style.display = "none";
+  swiper_wagyu_beef.style.display = "none";
+  swiper_mix_breed.style.display = "none";
+  swiper_lamb_dorper.style.display = "none";
+  swiper_pork.style.display = "none";
+  swiper_dumplings.style.display = "none";
+  swiper_dumplings_NO_halal.style.display = "block";
+
+  let swiper = new Swiper(".blog-slider", {
+    spaceBetween: 30,
+    effect: "fade",
+    loop: true,
+    mousewheel: {
+      invert: false,
+    },
+    // autoHeight: true,
+    pagination: {
+      el: ".blog-slider__pagination",
+      clickable: true,
+    },
+  });
+  console.log("swiper_wagyu_beef");
+})
 
 const swiper = new Swiper(".swiper", {
   // rewind: true,

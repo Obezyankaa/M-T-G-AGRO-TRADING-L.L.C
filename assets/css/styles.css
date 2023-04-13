@@ -597,10 +597,10 @@ input {
   color: var(--text-color);
 }
 
-.test {
+.block_catigories_NO_halal {
   display: flex;
   justify-content: space-around;
-  padding: 6rem 4rem;
+  padding: 4rem 4rem;
 }
 
 .blog-slider {
@@ -942,6 +942,10 @@ input {
   margin-top: 1.3rem;
 }
 
+.swiper_dumplings_NO_halal {
+  display: none;
+  margin-top: 1.3rem;
+}
 
 /*=============== EXPERIENCE ===============*/
 .experience__container {
@@ -1161,6 +1165,22 @@ input {
   display: var(--display-map-white);
 }
 
+.geography__img_block img {
+  max-width: 90%;
+}
+
+.geography__block_description {
+  display: flex;
+}
+
+.geography__description_left {
+  padding-right: 3rem;
+}
+
+.geography__description_left ul, .geography__description_right ul {
+  text-align: center;
+}
+
 .geography__img_block_dark {
   display: var(--display-map-dark);
 }
@@ -1373,6 +1393,7 @@ input {
     .geography__container {
       flex-direction: column;
       padding-bottom: 25px;
+      text-align: center;
     }
 
     .geography__text {
@@ -1726,6 +1747,7 @@ input {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 1rem;
     }
 
     .swiper-button-prev, .swiper-button-next {
