@@ -925,6 +925,8 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+
+
 const scroll_down = document.querySelector(".scroll-down");
 scroll_down.style.display = "none";
 setTimeout(() => {

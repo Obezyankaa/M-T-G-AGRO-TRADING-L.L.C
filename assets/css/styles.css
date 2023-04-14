@@ -1385,11 +1385,16 @@ input {
       height: 30%;
     } */
 
-    .discover__img {
+    .discover__card_link {
       width: 100px;
       height: 100px;
     }
 
+    .discover__img {
+     width: 100%;
+    height: 100%;
+    }
+    
     .geography__container {
       flex-direction: column;
       padding-bottom: 25px;
@@ -1657,9 +1662,6 @@ input {
   }
   .discover__card {
     width: 237px;
-  }
-  .discover__container {
-    /* width: 820px; */
   }
   .discover__data {
     left: 1.5rem;

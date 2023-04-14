@@ -1,8 +1,8 @@
-# Demo site for miratorg in dubai 🐮
+# MTG Agro Trading L.L.C 🐮
 <!-- ## [Watch it on youtube](https://youtu.be/YzRDHxbw1RU) -->
-###  Demo site for miratorg in dubai 🐮
+### Site for MTG Agro Trading L.L.C 
 
-- Demo site for miratorg in dubai, using HTML, CSS, SCSS, JAVASCRIPT & JQUERY.
+- Site for MTG Agro Trading L.L.C, using HTML, CSS, SCSS, JAVASCRIPT & JQUERY.
 - Contains animations when scrolling.
 - Includes a dark and light mode.
 - Developed first with the Mobile First methodology, then for desktop.
